@@ -3,12 +3,12 @@ import image1 from '../assets/images/twodevices@2x.png'
 
 
 const benefits = [
-    {title: 'Never miss a deadline', desc:"Manage your deadlines, save more time on follow ups", flip:false, icons:'bene fas fa-stopwatch',image:image1},
-    {title: 'Attain Visibility', desc:"Keep track of your mobile workforce", flip:true, icons:'bene fas fa-mobile-alt',image:image1},
-    {title: 'Team Collaborate', desc:"Share your works collaboratively on projects with anyone ", flip:false, icons:'bene fas fa-users',image:image1},
-    {title: 'Eliminate Geographic Barriers', desc:"Allow virtual meetings and trainings without having to find a location or make travel arrangements", flip:true, icons:'bene fas fa-globe',image:image1},
-    {title: 'Optimize decision making', desc:"Make your decisions as good as possible", flip:false, icons:'bene fas fa-eye',image:image1},
-    {title: 'Access anytime anywhere', desc:"Availability of information anytime & anywhere ", flip:true, icons:'bene fas fa-cogs',image:image1},
+    {title: 'Never miss a deadline', desc:"Manage your deadlines, save more time on follow ups", flip:false, icons:'bene fas fa-stopwatch',image:image1, active:true},
+    {title: 'Attain Visibility', desc:"Keep track of your mobile workforce", flip:true, icons:'bene fas fa-mobile-alt',image:image1, active:true},
+    {title: 'Team Collaborate', desc:"Share your works collaboratively on projects with anyone ", flip:false, icons:'bene fas fa-users',image:image1, active:true},
+    {title: 'Eliminate Geographic Barriers', desc:"Allow virtual meetings and trainings without having to find a location or make travel arrangements", flip:true, icons:'bene fas fa-globe',image:image1, active:false},
+    {title: 'Optimize decision making', desc:"Make your decisions as good as possible", flip:false, icons:'bene fas fa-eye',image:image1, active:false},
+    {title: 'Access anytime anywhere', desc:"Availability of information anytime & anywhere ", flip:true, icons:'bene fas fa-cogs',image:image1, active:true},
 ]
 
 const BenefitItem = ({title, desc, flip, icons, image}) => (
@@ -32,7 +32,10 @@ class Benefits extends Component {
       <div className="container text-center py-3">
       <h2 className="feature-heading">Why ZenForce</h2>
         <p className="bene_subtitle"> ZenForce is a workforce management solution for increasing productivity of your field operations.</p>
-        {benefits.map((bene) => <BenefitItem {...bene} />)}
+
+        {benefits.filter((bene) => {return (bene.active === true)})
+                 .map((bene) => {return <BenefitItem {...bene}/>})
+        }
       </div>
     )
   }

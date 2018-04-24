@@ -30,7 +30,7 @@ const IndexPage = () => (
               <Features />
           </section>
 
-          <section id="contactUs" className="">
+          <section id="contact" className="">
               <ContactUs />
           </section>
 
@@ -53,9 +53,8 @@ const Banner = () => (
         </div>
           <img className="intro-image"  src={image} alt="generic"/>
       </div>
-
-
       </div>
+
   </div>
 )
 
@@ -68,6 +67,7 @@ const ContactUs = () => (
         <p>
           <ContactForm />
         </p>
+
       </div>
     </section>
 )

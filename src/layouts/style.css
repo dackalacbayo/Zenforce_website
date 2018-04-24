@@ -1,3 +1,6 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
 div.bg-banner{
   /* background-image: url('../assets/images/zenforce_brochure1.png'); */
   /* background-attachment:	fixed,							fixed,							fixed;
@@ -10,41 +13,36 @@ div.bg-banner{
   background-repeat: no-repeat; */
 
   @include dark(#333);
-			background-image:		url('../assets/images/overlay1.png'),		url('../assets/images/pattern2.jpg');
-      background-attachment:	fixed,							fixed,							fixed;
-       background-position:	top left,						center center,					center center;
-       background-size:		100% 100%,							cover,							cover;
-       overflow: hidden;
-       position: relative;
-       text-align: center;
-       height:100%;
-       background-repeat: no-repeat;
+		 background-image:		url('../assets/images/overlay1.png'),		url('../assets/images/pattern2.jpg');
+     background-attachment:	fixed,							fixed,							fixed;
+     background-position:	top left,						center center,					center center;
+     background-size:		100% 100%,							cover,							cover;
+     overflow: hidden;
+     position: relative;
+     text-align: center;
+     height:100%;
+     background-repeat: no-repeat;
 }
 
 section#contactUs{
-       margin-top: 25px;
+      margin-top: 25px;
 }
 
 section#features{
-      background-image: linear-gradient(to bottom, #fafafa, #e6e6e6);
+    background-image: linear-gradient(to bottom, #fafafa, #e6e6e6);
 }
 
-section#benefits{
-
-
-}
-
-section#benefits:after{
-
+section#banner{
+    margin-top: 50px !important;
 }
 
 section.footer{
-      background-color:#2A2927;
-      color:white;
-      margin-top: -27px;
+    background-color:#2A2927;
+    color:white;
+    margin-top: -27px;
 }
 div.row.footer{
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 .font-weight-normal {
@@ -274,7 +272,8 @@ i.fas{
 }
 
 i.fas:hover{
-  color:teal;
+  color:#187ae4;
+  transform: scale(1.25);
 }
 
 i.bene.fas{
@@ -319,6 +318,55 @@ hr {
     background-color: teal;
 }
 
+select.select_industry{
+    width: 100% !important;
+    margin: 0;
+    max-width: 90% !important;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    text-align: left;
+    line-height: 1.21428571em;
+    padding: .67857143em 1em;
+    background: #fff;
+    border: 1px solid rgba(34, 36, 38, .15);
+    color: rgba(0, 0, 0, .87);
+    border-radius: .28571429rem;
+    transition: box-shadow .1s ease,border-color .1s ease;
+    box-shadow: none;
+    position: absolute;;
+}
+
+div.form-row.select{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+    margin-bottom: 40px;
+}
+div.modal-content{
+  position: absolute;
+  top: 0px;
+  margin: 0 0 35px 0;
+  background: rgb(247, 247, 247);
+  border: 1px solid rgba(6, 120, 136, 0.8);
+  box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7), 0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+  border-radius: 5px;
+}
+div.modal-footer{
+    width: 100%;
+    padding: 10px 29px 11px 30px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    background: repeating-linear-gradient(-45deg, rgb(247, 247, 247) , rgb(247, 247, 247) 15px, rgb(236, 236, 236) 15px, rgb(225, 234, 235) 30px, rgb(247, 247, 247) 30px );
+}
+
+section.jumbotron.text-center{
+  background-color: white;
+}
+
+/*Navbar*/
 
 /* Media */
 @media (min-width:100px)  {
@@ -352,12 +400,12 @@ hr {
 
    img.intro-image {
      right: auto;
-    left: 50%;
-    margin-left: -150px;
-    bottom: auto;
-    top: 55%;
-    width: 330px;
-    height: 200px;
+      left: 50%;
+      margin-left: -150px;
+      bottom: auto;
+      top: 60%;
+      width: 320px;
+      height: 200px;
      }
   }
 
@@ -443,7 +491,7 @@ hr {
     top: 260px;
   }
   div.bg-banner{
-    height: 550px;
+    height: 450px;
   }
   img.intro-image {
     right: auto;
@@ -462,14 +510,17 @@ hr {
     top: 310px;
   }
   div.bg-banner{
-    height: 600px;
+    height: 550px;
+  }
+  div.panel {
+    margin-top: 108px !important;
   }
   img.intro-image {
     right: auto;
     left: 50%;
-    margin-left: 139px;
+    margin-left: 150px;
     bottom: auto;
-    top: -1%;
+    top: -20%;
     width: 608px;
     height: 400px;;
     }
@@ -480,14 +531,17 @@ hr {
     right: 150px;
     top: 290px;
   }
+  div.panel {
+    margin-top: 108px !important;
+  }
   img.intro-image {
     right: auto;
     left: 50%;
-    margin-left: 208px;
+    margin-left: 239px;
     bottom: auto;
-    top: -5%;
-    width: 773px;
-    height: 500px
+    top: -35%;
+    width: 710px;
+    height: 450px;
     }
  }
 @media (min-width:2400px){
@@ -501,7 +555,7 @@ hr {
     left: 50%;
     margin-left: 700px;
     bottom: auto;
-    top: -5%;
+    top: -30%;
     width: 750px;
     height: 450px
     }

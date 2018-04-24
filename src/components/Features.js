@@ -14,7 +14,7 @@ const features = [
     {title: 'Check In/Out from Sites', active:true, icon:'fas fa-check-circle',desc:'Donec sed odio dui. Etiam porta sem ut id elit. Morbi leo risus'},
     {title: 'Address Book For Client Details', active:false, icon:'fas fa-address-book',desc:'Donec sed odio dui. Etiam porta sem ut id elit. Morbi leo risus'},
     {title: 'Work Group Creation and Management', active:false, icon:'fas fa-users',desc:'Donec sed odio dui. Etiam porta sem ut id elit. Morbi leo risus'},
-    {title: 'Geo Tagging', active:true, icon:'fas fa-tags',desc:'Automatically attach location information to your digital media like websites, videos and photographs'},
+    {title: 'Geo Tagging', active:true, icon:'fas fa-tags',desc:'Automatically attach location information to your digital media'},
     {title: 'Detailed Reporting', active:true, icon:'fas fa-clipboard-list',desc:'Gives you automatic, accurate and structural digital reports'},
     {title: 'Offline Capable', active:true, icon:'fas fa-power-off',desc:'Can access without an Internet Connection'},
     {title: 'Mobile Ready', active:true, icon:'fas fa-mobile',desc:'Performs well even on mobile devices'},
@@ -35,7 +35,7 @@ class Features extends Component {
   render(){
     return(
       <div className="container text-center py-2">
-      <h2 className="feature-heading">What do we have</h2>
+      <h2 className="feature-heading">What we do have</h2>
       <div className="row">
         {features.filter((feat) => {return (feat.active === true)})
                  .map((feat) => {return <FeatureItem {...feat}/>})

@@ -20,9 +20,8 @@ const Layout = ({ children, data }) => (
       ]}
     />
 
-    <div
-
-    >
+    <div>
+      <Header />
       {children()}
       <Footer />
     </div>
