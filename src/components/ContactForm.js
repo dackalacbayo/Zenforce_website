@@ -13,70 +13,62 @@ const InputField = props => (
     </div>
 )
 
-const SelectIndustry = () => (
-  <div className="form-row select">
-    <div className="form-group col-md-12 dropdown">
-      <label className="col-form-label">Industry</label><br/>
-      <select className="select_industry" name="industry">
-        <option value="">Select Industry</option>
-        <option value="Agriculture/Forestry/Fish">Agriculture/Forestry/Fish</option>
-        <option value="Automotive">Automotive</option>
-        <option value="Banking/Financial">Banking/Financial</option>
-        <option value="Construction">Construction</option>
-        <option value="Consulting/Business Services">Consulting/Business Services</option>
-        <option value="Distribution">Distribution</option>
-        <option value="Engineering">Engineering</option>
-        <option value="Export/Import">Export/Import</option>
-        <option value="Fashion/Art">Fashion/Art</option>
-        <option value="Financial Services">Financial Services</option>
-        <option value="Food/Beverage">Food/Beverage</option>
-        <option value="Government and Public Sector">Government and Public Sector</option>
-        <option value="Healthcare">Healthcare</option>
-        <option value="High Tech Manufacturing">High Tech Manufacturing</option>
-        <option value="Hospitality">Hospitality</option>
-        <option value="Information and Communication Technology (ICT)">Information and Communication Technology (ICT)</option>
-        <option value="Insurance">Insurance</option>
-        <option value="Manufacturing">Manufacturing</option>
-        <option value="Marketing/PR/Comms">Marketing/PR/Comms</option>
-        <option value="Media">Media</option>
-        <option value="Mining">Mining</option>
-        <option value="Not for Profit">Not for Profit</option>
-        <option value="Oil/Gas">Oil/Gas</option>
-        <option value="Pharmaceutical">Pharmaceutical</option>
-        <option value="Real Estate">Real Estate</option>
-        <option value="Recreation">Recreation</option>
-        <option value="Religion">Religion</option>
-        <option value="Retail and Consumer Goods">Retail and Consumer Goods</option>
-        <option value="Semiconductor">Semiconductor</option>
-        <option value="Services">Services</option>
-        <option value="Shipping and Transportation">Shipping and Transportation</option>
-        <option value="Technology">Technology</option>
-        <option value="Telecommunications">Telecommunications</option>
-        <option value="Travel and Leisure">Travel and Leisure</option>
-        <option value="Utilities">Utilities</option>
-        <option value="Wholesale">Wholesale</option>
-        <option value="Other">Other</option>
-    </select>
-  </div>
-</div>
-)
 
-const SelectCompanySize = () => (
-  <div className="form-row select">
-    <div className="form-group col-md-12 dropdown">
-      <label className="col-form-label">Company Size</label><br/>
-        <select className="select_industry" name="companySize">
-          <option value="">Select company size</option>
-          <option value="1-9 employees">1-9 employees</option>
-          <option value="10-150 employees">10-150 employees</option>
-          <option value="151-300 employees">151-300 employees</option>
-          <option value="301-500 employees">301-500 employees</option>
-          <option value="501-2000 employeess">501-2000 employees</option>
-          <option value="Over 2000 employees">Over 2000 employees</option>
-      </select>
-    </div>
-</div>
-)
+const companySize = [
+      { key: 1, text: '1-9 employees', value: '1' },
+      { key: 2, text: '10-150 employees', value: '2' },
+      { key: 3, text: '151-300 employees', value: '3' },
+      { key: 4, text: '301-500 employees', value: '4' },
+      { key: 5, text: '501-2000 employees', value: '5' },
+      { key: 6, text: 'Over 2000 employees', value: '6' },
+    ]
+
+const industries = [
+    { key: 1, text: 'Agriculture/Forestry/Fish', value: '1' },
+    { key: 2, text: 'Automotive', value: '2' },
+    { key: 3, text: 'Banking/Financial', value: '3' },
+    { key: 4, text: 'Construction', value: '4' },
+    { key: 5, text: 'Consulting/Business Services', value: '5' },
+    { key: 6, text: 'Distribution', value: '6' },
+    { key: 7, text: 'Engineering', value: '7' },
+    { key: 8, text: 'Export/Import', value: '8' },
+    { key: 9, text: 'Fashion/Art', value: '9' },
+    { key: 10, text: 'Financial Services', value: '10' },
+    { key: 11, text: 'Food/Beverage', value: '11' },
+    { key: 12, text: 'Government and Public Sector', value: '12' },
+    { key: 13, text: 'Healthcare', value: '13' },
+    { key: 14, text: 'High Tech Manufacturing', value: '14' },
+    { key: 15, text: 'Hospitality', value: '15' },
+    { key: 16, text: 'Information and Communication Technology (ICT)', value: '16' },
+    { key: 17, text: 'Insurance', value: '17' },
+    { key: 18, text: 'Manufacturing', value: '18' },
+    { key: 19, text: 'Marketing/PR/Comms', value: '19' },
+    { key: 20, text: 'Media', value: '20' },
+    { key: 21, text: 'Mining', value: '21' },
+    { key: 22, text: 'Not for Profit', value: '22' },
+    { key: 23, text: 'Oil/Gas', value: '23' },
+    { key: 24, text: 'Pharmaceutical', value: '24' },
+    { key: 25, text: 'Real Estate', value: '25' },
+    { key: 26, text: 'Recreation', value: '26' },
+    { key: 27, text: 'Religion', value: '27' },
+    { key: 28, text: 'Retail and Consumer Goods', value: '28' },
+    { key: 29, text: 'Semiconductor', value: '29' },
+    { key: 30, text: 'Services', value: '30' },
+    { key: 31, text: 'Shipping and Transportation', value: '31' },
+    { key: 32, text: 'Technology', value: '32' },
+    { key: 33, text: 'Telecommunications', value: '33' },
+    { key: 34, text: 'Travel and Leisure', value: '34' },
+    { key: 35, text: 'Utilities', value: '35' },
+    { key: 36, text: 'Wholesale', value: '36' },
+    { key: 37, text: 'Other', value: '37' },
+]
+
+const optionIndustries = industries.map((ind) => (
+  <option value={ind.text}> {ind.text} </option>
+))
+const optionCompSize = companySize.map((size) => (
+  <option value={size.text}> {size.text} </option>
+))
 
 
 class ContactForm extends Component {
@@ -133,11 +125,20 @@ const company = [
                         <Segment color='teal'>
                             <label className="col-form-label">Company Name</label><br/>
                             <Input fluid placeholder="CompanyName" name="companyName" width={16}/><br/>
-                            <SelectIndustry />
-                            <SelectCompanySize />
+                              <div className="form-row select">
+                                  <div className="form-group col-md-12 dropdown">
+                                    <label className="col-form-label">Industry</label><br/>
+                                    <select className="select_industry" name="industry">{optionIndustries}</select>
+                                  </div>
+                              </div>
+                              <div className="form-row select">
+                                <div className="form-group col-md-12 dropdown">
+                                  <label className="col-form-label">Company Size</label><br/>
+                                <select className="select_industry" name="companySize">{optionCompSize}</select>
+                                </div>
+                              </div>
                         </Segment>
                       </Segment.Group>
-
                       <Segment color='teal'>
                           <div className="form-group">
                             <label className="col-form-label">Message</label>
