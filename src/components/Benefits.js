@@ -15,7 +15,7 @@ const BenefitItem = ({title, desc, flip, icons, image}) => (
   <div className="row featurette">
     <div className={flip ? "order-md-2 col-md-7" : "col-md-7"} >
       <h2 className="featurette-heading"><i className={icons}></i> {title}</h2>
-      <p className="lead">
+      <p className="desc lead">
         {desc}
       </p>
     </div><hr/>
@@ -29,7 +29,7 @@ const BenefitItem = ({title, desc, flip, icons, image}) => (
 class Benefits extends Component {
   render(){
     return(
-      <div className="container text-center py-3">
+      <div className="container text-center py-3 mb-5">
       <h2 className="feature-heading">Why ZenForce</h2>
         <p className="bene_subtitle"> ZenForce is a workforce management solution for increasing productivity of your field operations.</p>
 

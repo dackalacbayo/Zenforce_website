@@ -12,9 +12,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import { Header, Icon, Segment,Label, Dropdown,Grid,Input, TextArea, Divider, Button } from 'semantic-ui-react'
 
-// <section id="" className="">
-//       <img className="sec3_img"  src={image1} alt="generic"/>
-// </section>
 
 const IndexPage = () => (
     <div>
@@ -26,9 +23,13 @@ const IndexPage = () => (
                 <Benefits />
           </section>
 
+          <hr className="m-0" />
+
           <section id="features" className="">
               <Features />
           </section>
+
+          <hr className="m-0" />
 
           <section id="contact" className="">
               <ContactUs />
@@ -38,36 +39,28 @@ const IndexPage = () => (
 )
 
 const Banner = () => (
-  <div className="bg-banner">
-
-    <div className="position-relative overflow-hidden p-3 p-md-5 text-center">
-      <div className="col-md-5 p-lg-6 mx-sm-4 my-5">
-        <div className="panel">
-        <h1 className="display-4 font-weight-normal">ZenForce</h1>
-        <p className="lead font-weight-normal">
-          Zenforce is the easiest way to manage your work force. Whether you’re a sales team, collection team, repair team. Zenforce is here to help you tick off all your field operations needs.
-          <br/><br/>
-          <a href="#benefits"><Button className="button discover" ><span className="button">Discover More <i className="fas fa-angle-double-right"></i> </span></Button></a>
-        </p>
-        <br/>
+    <div className="bg-banner">
+      <div className="position-relative overflow-hidden p-3 p-md-5 text-center">
+        <div className="col-md-5 p-lg-6 mx-sm-4 my-5">
+          <div className="panel">
+            <h1 className="display-4 font-weight-normal">ZenForce</h1>
+            <hr className="banner"/>
+            <p className="lead font-weight-normal">Zenforce is the easiest way to manage your work force. Whether you’re a sales team, collection team, repair team. Zenforce is here to help you tick off all your field operations needs.<br/><br/>
+            <a href="#benefits"><Button className="button discover" ><span className="button">Discover More <i className="aa fas fa-angle-double-right"></i> </span></Button></a></p><br/>
+          </div>
+            <img className="intro-image"  src={image} alt="generic"/>
+          </div>
         </div>
-          <img className="intro-image"  src={image} alt="generic"/>
-      </div>
-      </div>
-
-  </div>
+    </div>
 )
 
 const ContactUs = () => (
 
   <section className="jumbotron text-center">
-      <div className="container">
+      <div className="container py-5">
         <h1 className="jumbotron-heading">Need a Free Demo & Quotation ?</h1>
-        <p className="lead text-muted">ZenForce offers a free demo and quotation for you. Just fill up the form and send us a message. </p>
-        <p>
-          <ContactForm />
-        </p>
-
+        <p className="lead feature_desc">ZenForce offers a free demo and quotation for you. Just fill up the form and send us a message. </p>
+        <p> <ContactForm /> </p>
       </div>
     </section>
 )

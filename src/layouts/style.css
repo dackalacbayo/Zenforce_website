@@ -1,17 +1,8 @@
-body{
-  font-family: Arial, Helvetica, sans-serif;
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-div.bg-banner{
-  /* background-image: url('../assets/images/zenforce_brochure1.png'); */
-  /* background-attachment:	fixed,							fixed,							fixed;
-  background-position:	top left,						center center,					center center;
-  background-size:		100% 100%,							cover,							cover;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  height:100%;
-  background-repeat: no-repeat; */
 
+div.bg-banner{
   @include dark(#333);
 		 background-image:		url('../assets/images/overlay1.png'),		url('../assets/images/pattern2.jpg');
      background-attachment:	fixed,							fixed,							fixed;
@@ -19,7 +10,6 @@ div.bg-banner{
      background-size:		100% 100%,							cover,							cover;
      overflow: hidden;
      position: relative;
-     text-align: center;
      height:100%;
      background-repeat: no-repeat;
 }
@@ -29,7 +19,7 @@ section#contactUs{
 }
 
 section#features{
-    background-image: linear-gradient(to bottom, #fafafa, #e6e6e6);
+    /* background-image: linear-gradient(to bottom, #fafafa, #e6e6e6); */
 }
 
 section#banner{
@@ -37,7 +27,7 @@ section#banner{
 }
 
 section.footer{
-    background-color:#2A2927;
+    background-color:#343a40;
     color:white;
     margin-top: -27px;
 }
@@ -50,13 +40,6 @@ div.row.footer{
     color: white;
 }
 
-.btn-outline-secondary {
-    color: #ffffff;
-    background-color: #06aba8;
-    background-image: none;
-    border-color: #6c757d;
-    width: 200px !important;
-}
 
 .btn-outline-secondary:hover {
     color: #fff;
@@ -66,47 +49,36 @@ div.row.footer{
     box-shadow: 0 4px #06aba8;
 }
 
-.btn-secondary{
+/* .btn-secondary{
   margin-right: 5px;
   width:150px;
-}
-.btn-secondary:hover{
+} */
+/* .btn-secondary:hover{
   color:black;
   background-color:rgba(255, 255, 255, .5);
-}
+} */
 
 button.ui.button.discover{
   display: inline-block;
   border-radius: 4px;
-  background-color: #ffffffb0;
-  /* border-color: 2px solid darkblue; */
-  /* border: 2px solid cadetblue; */
-  /* border: none; */
-  color: #636363;
+  background-color: rgba(33, 33, 33, 0.6902);
+  /* background-color: #545b62; */
   text-align: center;
   font-size: 18px;
   padding: 11px;
   width: 230px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
-  border-radius: 250px;
 }
 
-button.ui.button:hover{
-  opacity: 1;
-  right: 0;
-  background-color: #cacbcd69;
-  background-image: none;
-  box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34, 36, 38, .15) inset;
-  color: rgba(0, 0, 0, .8);
-}
 
 span.button{
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  color:#ffffff;
+  font-weight: 500;
 }
 
 span.button:after{
@@ -126,6 +98,14 @@ p.lead{
   font-size:15px;
   padding: 8px;
   letter-spacing: 1.5px;
+  color:white;
+}
+
+p.desc{
+  font-size:15px;
+  padding: 8px;
+  letter-spacing: 1.5px;
+  color:black;
 }
 
 @media screen and (max-width: 640px){
@@ -158,8 +138,8 @@ div.row.featurette {
   /* background-color: #F2F2FF; */
   /* background-color: #f1f1f1; */
   height: auto !important;
-  border-bottom: 1px solid #eaeaea;
-  background-image: linear-gradient(to bottom, #fafafa, #e6e6e6);
+  border-top: 1px solid #eaeaea;
+  /* background-image: linear-gradient(to bottom, #fafafa, #e6e6e6); */
 }
 
 div.row.featurette:hover{
@@ -204,23 +184,7 @@ h2.featurette-heading{
 }
 
 
-h1.font-weight-normal:after{
-  background-color: #ffc029;
-  background-image: linear-gradient(90deg,#ffc029,#4cd8b0);
-  bottom: 255px;
-  content: "";
-  display: block;
-  /* height: 3px; */
-  /* height: 3px; */
-  top: 7px !important;
-  height: .1875rem;
-  left: -7px !important;
-  margin: 0 auto;
-  /* position: absolute; */
-  position: relative;
-  right: 0;
-  width: 100px;
-}
+
 
 p.feature_desc{
   font-size: 13px;
@@ -250,7 +214,7 @@ h2.feature-heading{
 }
 
 h2.feature-heading:hover{
-  color:#048c74;
+  /* color:#048c74; */
 }
 
 img.intro-image{
@@ -267,13 +231,18 @@ img.sec3_img{
 }
 
 i.fas{
-  color:#606060;
+  color:#cccccc;
   margin-right: 5px;
 }
 
-i.fas:hover{
-  color:#187ae4;
-  transform: scale(1.25);
+i.aa.fas{
+  color:#ffffff;
+  margin-right: 5px;
+}
+
+i.feat.fas{
+  color:#6c757d;
+  margin-right: 5px;
 }
 
 i.bene.fas{
@@ -311,11 +280,12 @@ a.fab:hover{
 
 
 hr {
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
-    color: white;
-    background-color: teal;
+  border: 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+hr.banner {
+  border: 0;
+  border-top: 2px solid rgba(255, 253, 253, 0.31);
 }
 
 select.select_industry{

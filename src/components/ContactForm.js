@@ -107,8 +107,9 @@ const company = [
     ]
       return (
           <div>
-            <Button active type="button" className="btn btn-secondary"  onClick={this.toggle}> Contact Us  </Button>
-            <Button type="button" className="btn btn-secondary my-2" > <a href="#">Learn More</a></Button>
+            <Button active type="button" className="btn btn-secondary mr-2 btn-lg"  onClick={this.toggle}> Contact Us  </Button>
+            <Button active type="button" className="btn btn-secondary my-2" > Learn More<i className="fa fa-angle-right ml-2"></i></Button>
+
             <Modal className="modal-lg" isOpen={this.state.modal} toggle={this.toggle}>
               <ModalHeader toggle={this.close}>Send Us a Message to get a Free Demo & Quotation</ModalHeader>
                 <form method="POST" action="https://formspree.io/dackalacbayo@gmail.com">
@@ -148,7 +149,7 @@ const company = [
                   </Segment.Group>
                 </ModalBody>
                   <ModalFooter>
-                      <Button type="submit" width={16} color="primary" content="Send" icon="send"> <Icon name='send' /> Send</Button>
+                      <Button type="submit" width={16} color="secondary" content="Send" icon="send"> <Icon name='send' /> Send</Button>
                   </ModalFooter>
                 </form>
               </Modal>
