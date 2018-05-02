@@ -5,6 +5,7 @@ import Link from 'gatsby-link'
 import Features from '../components/Features'
 import Benefits from '../components/Benefits'
 import ContactForm from '../components/ContactForm'
+import Contact from '../components/Contact'
 
 import image  from '../assets/images/zenForce.png'
 import image1  from '../assets/images/zenforceBrochure.png'
@@ -29,11 +30,10 @@ const IndexPage = () => (
               <Features />
           </section>
 
-          <hr className="m-0" />
-
-          <section id="contact" className="">
-              <ContactUs />
+          <section id="contacts" className="">
+              <Contact />
           </section>
+
 
     </div>
 )
@@ -52,17 +52,6 @@ const Banner = () => (
           </div>
         </div>
     </div>
-)
-
-const ContactUs = () => (
-
-  <section className="jumbotron text-center">
-      <div className="container py-5">
-        <h1 className="jumbotron-heading">Need a Free Demo & Quotation ?</h1>
-        <p className="lead feature_desc">ZenForce offers a free demo and quotation for you. Just fill up the form and send us a message. </p>
-        <p> <ContactForm /> </p>
-      </div>
-    </section>
 )
 
 export default IndexPage

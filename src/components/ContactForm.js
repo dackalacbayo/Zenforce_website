@@ -6,13 +6,12 @@ import { Header, Icon, Segment,Label, Dropdown,Grid,Input, TextArea, Divider, Bu
 
 const InputField = props => (
    <div className="form-row">
-     <div className="form-group col-md-12">
-       <div> <label className="col-form-label">{props.name}</label> </div>
-       <Input width={8} fluid type={props.type} placeholder={props.name} name={props.fieldKey} onChange={props.onChange}/>
+     <div className="col-md-12">
+       <div><label className="col-form-label">{props.name}</label> </div>
+       <Input fluid type={props.type} placeholder={props.name} name={props.fieldKey} onChange={props.onChange}/>
      </div>
     </div>
 )
-
 
 const companySize = [
       { key: 1, text: '1-9 employees', value: '1' },
@@ -106,47 +105,47 @@ const company = [
         {name:"Industry", fieldKey:"industry"},
     ]
       return (
-          <div>
-            <Button active type="button" className="btn btn-secondary mr-2 btn-lg"  onClick={this.toggle}> Contact Us  </Button>
-            <Button active type="button" className="btn btn-secondary my-2" > Learn More<i className="fa fa-angle-right ml-2"></i></Button>
+          <div className="pt-4">
+            <Button type="button" className="btn mr-2 btn-lg"  onClick={this.toggle}> Contact Us  </Button>
+            <Button type="button" className="btn btn-lg btn-light my-2" > Learn More<i className="fa fa-angle-right ml-2"></i></Button>
 
             <Modal className="modal-lg" isOpen={this.state.modal} toggle={this.toggle}>
-              <ModalHeader toggle={this.close}>Send Us a Message to get a Free Demo & Quotation</ModalHeader>
+              <ModalHeader toggle={this.close}>
+              <div className="row">
+                  <div className="col">
+                      <h5 className="h5">Send Us a Message to get a Free Demo & Quotations</h5>
+
+                  </div>
+              </div>
+                </ModalHeader>
                 <form method="POST" action="https://formspree.io/dackalacbayo@gmail.com">
                 <ModalBody>
-                  <Segment.Group stacked >
                     <Segment.Group horizontal>
-                        <Segment color='teal'>
-                          <div className="row">
-                            <div className="col">
-                                <FormSection items={items} onChange={this.onChange.bind(this)}/>
-                            </div>
+                        <Segment className="m-3">
+                        <div className="row">
+                          <div className="col-lg-6 form-group">
+                              <FormSection items={items} onChange={this.onChange.bind(this)}/>
                           </div>
-                        </Segment>
-                        <Segment color='teal'>
-                            <label className="col-form-label">Company Name</label><br/>
-                            <Input fluid placeholder="CompanyName" name="companyName" width={16}/><br/>
-                              <div className="form-row select">
-                                  <div className="form-group col-md-12 dropdown">
-                                    <label className="col-form-label">Industry</label><br/>
-                                    <select className="select_industry" name="industry">{optionIndustries}</select>
-                                  </div>
-                              </div>
-                              <div className="form-row select">
-                                <div className="form-group col-md-12 dropdown">
-                                  <label className="col-form-label">Company Size</label><br/>
-                                <select className="select_industry" name="companySize">{optionCompSize}</select>
-                                </div>
-                              </div>
-                        </Segment>
-                      </Segment.Group>
-                      <Segment color='teal'>
-                          <div className="form-group">
+                          <div className="col-lg-6 form-group">
+                            <label className="col-form-label">Company Name</label>
+                            <Input fluid placeholder="CompanyName" name="companyName" width={16}/>
+
+                            <label className="col-form-label">Industry</label><br/>
+                            <select className="select_industry" name="industry">
+                              <option value="">Select Industry</option>
+                              {optionIndustries}</select>
+
+                            <label className="col-form-label">Company Size</label><br/>
+                            <select className="select_industry" name="companySize">
+                              <option value="">Select Company Size</option>
+                              {optionCompSize}</select>
+
                             <label className="col-form-label">Message</label>
                             <TextArea className="form-control" name="message" id="message-text"/>
                           </div>
-                      </Segment>
-                  </Segment.Group>
+                      </div>
+                        </Segment>
+                      </Segment.Group>
                 </ModalBody>
                   <ModalFooter>
                       <Button type="submit" width={16} color="secondary" content="Send" icon="send"> <Icon name='send' /> Send</Button>

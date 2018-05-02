@@ -22,8 +22,10 @@ const features = [
 ]
 
 const FeatureItem = ({title,icon,desc}) => (
-  <div className="col-lg-3 m-0">
-    <h2 className="featurette-heading"><i className={icon}></i></h2>
+  <div className="col-lg-3 m-0 mb-5 pb-5">
+    <div className="icon icon-primary icon-circle mb-4">
+        <h2 className="featurette-heading py-3 pl-2 pt-4"><i className={icon}></i>  </h2>
+    </div>
     <h5 className="feature_title">{title}</h5>
     <p className="feature_desc">{desc}</p>
   </div>
@@ -33,13 +35,24 @@ class Features extends Component {
   render
   render(){
     return(
-      <div className="container text-center py-5">
-        <h2 className="feature-heading">What we do have</h2>
-        <div className="row mb-5">
+      <div className="container text-center">
+        <div className="row justify-content-center text-center section-intro">
+            <div className="col-12 col-md-9 col-lg-8 pb-5 py-5">
+                <h2 className="display-4">Product Features</h2>
+            </div>
+        </div>
+
+        <div className="row mb-5 mt-5">
+
           {features.filter((feat) => {return (feat.active === true)})
                    .map((feat) => {return <FeatureItem {...feat}/>})
           }
         </div>
+
+          <div className="container text-center">
+            <a href="/features"><button className="btn more features mr-2 btn-lg mb-5" >View More &raquo;</button></a>
+          </div>
+
       </div>
     )
   }
