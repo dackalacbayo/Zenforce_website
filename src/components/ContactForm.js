@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import { Modal, ModalHeader, ModalBody, ModalFooter, Form } from 'reactstrap';
 import { Header, Icon, Segment,Label, Dropdown,Grid,Input, TextArea, Divider, Button, Select } from 'semantic-ui-react'
+import image1  from '../assets/images/if_window_screen_with_mobile_icon_2541663.png'
 
 
 const InputField = props => (
@@ -83,10 +84,6 @@ class ContactForm extends Component {
 
     close = () => { this.setState({ modal: false  })}
     onChange = (e,{value,name}) => this.setState({[name]:value})
-    // onChange(e, props){
-    //   console.log(e)
-    //   console.log(props)
-    // }
     sendContact = () => {console.log(this.state)}
 
 
@@ -106,8 +103,8 @@ const company = [
     ]
       return (
           <div className="pt-4">
-            <Button type="button" className="btn mr-2 btn-lg"  onClick={this.toggle}> Contact Us  </Button>
-            <Button type="button" className="btn btn-lg btn-light my-2" > Learn More<i className="fa fa-angle-right ml-2"></i></Button>
+            <Button type="button" className="btn mr-2 btn-lg"  onClick={this.toggle}> Contact Us Now</Button>
+
 
             <Modal className="modal-lg" isOpen={this.state.modal} toggle={this.toggle}>
               <ModalHeader toggle={this.close}>
@@ -123,21 +120,26 @@ const company = [
                     <Segment.Group horizontal>
                         <Segment className="m-3">
                         <div className="row">
-                          <div className="col-lg-6 form-group">
+                        <div className="col-lg-4 form-group text-center mt-5">
+                        <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="tab-1">
+                            <img alt="Image" className="img-modal img-fluid box-shadow" height="200px" width="300px" src={image1} />
+                        </div>
+                        </div>
+                          <div className="col-lg-4 form-group">
                               <FormSection items={items} onChange={this.onChange.bind(this)}/>
                           </div>
-                          <div className="col-lg-6 form-group">
+                          <div className="col-lg-4 form-group">
                             <label className="col-form-label">Company Name</label>
-                            <Input fluid placeholder="CompanyName" name="companyName" width={16}/>
+                            <Input fluid placeholder="Company Name" name="companyName" width={16}/>
 
                             <label className="col-form-label">Industry</label><br/>
-                            <select className="select_industry" name="industry">
-                              <option value="">Select Industry</option>
+                            <select className="select_industry" name="industry" required>
+                              <option value="" disabled selected hidden>Select Industry</option>
                               {optionIndustries}</select>
 
                             <label className="col-form-label">Company Size</label><br/>
-                            <select className="select_industry" name="companySize">
-                              <option value="">Select Company Size</option>
+                            <select className="select_industry" name="companySize" required>
+                              <option value="" disabled selected hidden>Select Company Size</option>
                               {optionCompSize}</select>
 
                             <label className="col-form-label">Message</label>
@@ -148,7 +150,7 @@ const company = [
                       </Segment.Group>
                 </ModalBody>
                   <ModalFooter>
-                      <Button type="submit" width={16} color="secondary" content="Send" icon="send"> <Icon name='send' /> Send</Button>
+                      <Button className="secondary" type="submit" width={16}> <Icon name='send' /> Send</Button>
                   </ModalFooter>
                 </form>
               </Modal>

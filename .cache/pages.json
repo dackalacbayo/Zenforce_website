@@ -18,21 +18,28 @@
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "benefits.json",
-        "path": "/Benefits/"
+        "path": "/benefits/"
+    },
+    {
+        "componentChunkName": "component---src-pages-blog-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "blog.json",
+        "path": "/blog/"
     },
     {
         "componentChunkName": "component---src-pages-fa-q-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "fa-q.json",
-        "path": "/FaQ/"
+        "path": "/faQ/"
     },
     {
         "componentChunkName": "component---src-pages-features-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "features.json",
-        "path": "/Features/"
+        "path": "/features/"
     },
     {
         "componentChunkName": "component---src-pages-index-js",
@@ -56,31 +63,10 @@
         "path": "/404.html"
     },
     {
-        "componentChunkName": "component---src-pages-benefits-js",
+        "componentChunkName": "component---src-pages-about-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "benefits.json",
-        "path": "/benefits/"
-    },
-    {
-        "componentChunkName": "component---src-pages-features-js",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "features.json",
-        "path": "/features/"
-    },
-    {
-        "componentChunkName": "component---src-pages-fa-q-js",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "fa-q.json",
-        "path": "/faQ/"
-    },
-    {
-        "componentChunkName": "component---src-pages-blog-js",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "blog.json",
-        "path": "/blog/"
+        "jsonName": "about.json",
+        "path": "/about/"
     }
 ]

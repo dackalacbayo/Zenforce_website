@@ -16,7 +16,7 @@ class Contact extends Component {
                <div className="col pb-5 mb-5">
                    <h3 className="h1">Need a Free Demo & Quotation?</h3>
                    <h5 className="h5">ZenForce offers a free demo and quotation for you. Just fill up the form and send us a message.</h5>
-                   <p> <ContactForm /> </p>
+                   <ContactForm />
                </div>
            </div>
        </div>

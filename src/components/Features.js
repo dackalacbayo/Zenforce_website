@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Link from 'gatsby-link'
 import image1 from '../assets/images/twodevices@2x.png'
 
 const features = [
@@ -24,7 +25,7 @@ const features = [
 const FeatureItem = ({title,icon,desc}) => (
   <div className="col-lg-3 m-0 mb-5 pb-5">
     <div className="icon icon-primary icon-circle mb-4">
-        <h2 className="featurette-heading py-3 pl-2 pt-4"><i className={icon}></i>  </h2>
+        <h2 className="featurette-heading py-3 pl-2 pt-4"><i className={icon}></i></h2>
     </div>
     <h5 className="feature_title">{title}</h5>
     <p className="feature_desc">{desc}</p>
@@ -43,16 +44,12 @@ class Features extends Component {
         </div>
 
         <div className="row mb-5 mt-5">
-
           {features.filter((feat) => {return (feat.active === true)})
-                   .map((feat) => {return <FeatureItem {...feat}/>})
-          }
+                   .map((feat) => {return <FeatureItem {...feat}/>})}
         </div>
-
           <div className="container text-center">
-            <a href="/features"><button className="btn more features mr-2 btn-lg mb-5" >View More &raquo;</button></a>
+            <Link to="/features"><button className="btn more features mr-2 btn-lg mb-5" >View More &rsaquo;</button></Link>
           </div>
-
       </div>
     )
   }

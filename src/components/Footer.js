@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import image1  from '../assets/images/white_logo_transparent@2x.png'
 
 const Footer = () => (
-  <section className="footer">
+  <section className="footer pb-5">
       <footer className="container py-2">
         <div className="row footer">
 
@@ -71,7 +71,7 @@ const Footer = () => (
         </div>
 
         </footer>
-      
+
       </section>
 
 

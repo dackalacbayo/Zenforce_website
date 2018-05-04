@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import image1 from '../assets/images/twodevices@2x.png'
-import image2 from '../assets/images/project-desktop-just-things.jpg'
-import image3 from '../assets/images/project-mobile-zen-garden.jpg'
+import Link from 'gatsby-link'
+import image1 from '../assets/images/if_alarm_32381.png'
+import image2 from '../assets/images/mobile2.png'
+import image3 from '../assets/images/if_Group_Meeting_Light_80844.png'
 
 
 const benefits = [
@@ -13,11 +14,26 @@ const benefits = [
     {title: 'Access anytime anywhere', desc:"Availability of information anytime & anywhere ", flip:true, icons:'bene fas fa-cogs',image:image1, active:true},
 ]
 
+const BenefitItem = ({title, desc, flip, icons, image}) => (
+  <div className="row featurette">
+    <div className={flip ? "order-md-2 col-md-7" : "col-md-7"} >
+      <h2 className="featurette-heading"><i className={icons}></i> {title}</h2>
+      <p className="desc lead">
+        {desc}
+      </p>
+    </div><hr/>
+    <div className={flip ? "order-md-1 col-md-5" : "col-md-5"}>
+      <img className="featurette-image img-fluid mx-auto"  src={image} alt="generic"/>
+    </div><hr/>
+
+  </div>
+)
+
 
 class Benefits extends Component {
   render(){
     return(
-   <div className="container py-5">
+   <div className="container py-5 mt-5 ">
        <div className="row justify-content-center text-center section-intro">
            <div className="col-12 col-md-9 col-lg-8">
                <h2 className="display-4">Benefits of Using ZenForce</h2>
@@ -29,7 +45,7 @@ class Benefits extends Component {
            <div className="col-12 col-md-6 col-lg-5 order-md-2">
                <ul className="nav" id="myTab" role="tablist">
                    <li>
-                       <div className="card mb-1" id="tab-1" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                       <div className="card mb-1 " id="tab-1" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
                            <div className="card-body col-12 col-md-12 col-lg-12">
                                <h5><i className="bene fas fa-stopwatch"></i>Never miss a deadline</h5>
                                <p>Manage your deadlines, save more time on follow ups. Lorem ipsum dolor sit amet, omnis tractatos ad sea.</p>
@@ -38,7 +54,7 @@ class Benefits extends Component {
                    </li>
                    <li>
                        <div className="card mb-1" id="tab-2" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
-                           <div className="card-body">
+                           <div className="card-body col-12 col-md-12 col-lg-12">
                                <h5><i className="bene fas fa-mobile-alt"></i>Attain Visibility</h5>
                                <p>Keep track of your mobile workforce. Lorem ipsum dolor sit amet, omnis tractatos ad sea.</p>
                            </div>
@@ -46,7 +62,7 @@ class Benefits extends Component {
                    </li>
                    <li>
                        <div className="card mb-1" id="tab-3" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
-                           <div className="card-body">
+                           <div className="card-body col-12 col-md-12 col-lg-12">
                                <h5><i className="bene fas fa-users"></i>Team Collaborate</h5>
                                <p>Share your works collaboratively on projects with anyone. Lorem ipsum dolor sit amet, omnis tractatos ad sea. </p>
                            </div>
@@ -56,7 +72,7 @@ class Benefits extends Component {
            </div>
 
            <div className="col-12 col-md-6 order-md-1">
-               <div className="tab-content mt-5 ml-5" id="myTabContent">
+               <div className="tab-content mt-5 text-center" id="myTabContent">
                    <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="tab-1">
                        <img alt="Image" className="img-fluid box-shadow" src={image1} />
                    </div>
@@ -74,9 +90,10 @@ class Benefits extends Component {
        <div className="row justify-content-center text-center section-outro">
            <div className="col-lg-4 col-md-5">
                <h6>Detailed Overview</h6>
-               <p>Lorem ipsum dolor sit amet, omnis tractatos ad sea.</p>
-                 <a href="/benefits"><button className="btn more mr-2 btn-lg" >View More &raquo;</button></a>
+               <p>Wingmans component index showcases the full breadth of features at a glance</p>
+                  <Link to="/benefits"><button className="btn more mr-2 btn-lg" >View More &rsaquo;</button></Link>
            </div>
+
        </div>
 
    </div>

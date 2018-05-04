@@ -1,0 +1,193 @@
+import React , {Component} from 'react'
+import Link from 'gatsby-link'
+import logo from '../assets/images/white_logo_transparent@2x.png'
+import Contact from '../components/Contact'
+import image1 from '../assets/images/if_user 4_6711.png'
+import image2 from '../assets/images/mobile2.png'
+import image3 from '../assets/images/if_Group_Meeting_Light_80844.png'
+import image4 from '../assets/images/if_39-Globe_34330.png'
+import image5 from '../assets/images/if_view_126581.png'
+import image6 from '../assets/images/if_kservices_18068.png'
+
+
+class about extends Component {
+  render(){
+    return(
+      <div>
+      <div className="pt-5 mb-2" id="content-14">
+        <div className="features-banner" data-stellar-offset-parent="true" >
+            <div className="container" >
+              <div className="f_vcenter">
+                <div className="f_vbottom">
+                         <h1 className="profile-title display-4 font-weight-bold mb-2 ">About</h1>
+                </div>
+                <div className ="f_rht">
+                    <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="pb-5 mb-5">
+          <section className="section pb-0 py-3">
+            <div className="container about py-5">
+              <div className="row">
+                <div className="col-md-2">
+                  <div className="title">
+                    Two words about our company
+                  </div>
+                </div>
+                <div className="col-md-5">
+                  <h3 className="mb-4">
+                    We help people find great products at a <span className="text-primary">reasonable</span> price
+                  </h3>
+                    <blockquote className="blockquote">
+                      <p className="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos excepturi, eveniet, accusamus magnam unde mollitia facere similique corrupti veniam odit.
+                      </p>
+                    </blockquote>
+                      <p className="text-muted">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repellat, consectetur eligendi necessitatibus reiciendis reprehenderit porro expedita consequuntur vitae dolorem beatae commodi adipisci cupiditate qui quisquam blanditiis praesentium labore enim.
+                      </p>
+              </div>
+              <div className="col-md-5">
+                <p className="text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum vero corrupti voluptates, aperiam est asperiores, ea odio, maxime eos corporis ut magni.
+                </p>
+                <p className="text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit dolor debitis soluta, excepturi, laboriosam dolorum non, beatae veniam ipsa eum ad quia expedita minus explicabo placeat itaque voluptate, quos culpa!
+                </p>
+                <p className="text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti laboriosam sit natus totam libero at accusantium excepturi doloremque quae, vitae dignissimos soluta quod nesciunt, provident adipisci quas inventore odit impedit!
+                </p>
+              </div>
+          </div>
+        </div>
+    </section>
+
+    <section className="section pb-0 py-3">
+    	<div className="container about">
+    		<div className="row">
+    			<div className="col-md-2">
+    				<div className="title">	Our team</div>
+    			</div>
+    			<div className="col-md-10">
+    				<h3 className="mb-4">	People behind the scenes</h3>
+    				<p className="text-muted mb-5">
+    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel distinctio deserunt dolor culpa repellat iusto nostrum tempora placeat fuga facere mollitia adipisci, animi, reiciendis dicta quam obcaecati ad quibusdam eius?
+    				</p>
+    				<div className="row">
+    					<div className="col-md-4">
+    						<div className="card card-sm border-0 mb-3 mb-md-0">
+    							<img src={image1} alt="..." className="img-about w-50"/>
+    							<div className="">
+    								<h5 className="card-title ">
+    									Richard Roe, <small className="text-muted">Creative Director</small>
+    								</h5>
+                    <div className="widget">
+                       <ul className="social">
+                          <li><a href="https://www.facebook.com"><i className="fab fa-facebook-f"></i></a></li>
+                          <li><a href="https://twitter.com"><i className="fab fa-twitter"></i></a></li>
+                          <li><a href="https://instagram.com"><i className="fab fa-instagram"></i></a></li>
+                      </ul>
+                    </div>
+    							</div>
+    						</div>
+    					</div>
+    					<div className="col-md-4">
+    						<div className="card card-sm border-0 mb-3 mb-md-0">
+    							<img src={image1} alt="..." className="img-about w-50"/>
+    							<div className="">
+    								<h5 className="card-title">
+    									Ann Doe, <small className="text-muted">Designer</small>
+    								</h5>
+                    <div className="widget">
+                       <ul className="social">
+                          <li><a href="https://www.facebook.com"><i className="fab fa-facebook-f"></i></a></li>
+                          <li><a href="https://twitter.com"><i className="fab fa-twitter"></i></a></li>
+                          <li><a href="https://instagram.com"><i className="fab fa-instagram"></i></a></li>
+                      </ul>
+                    </div>
+    							</div>
+    						</div>
+    					</div>
+    					<div className="col-md-4">
+    						<div className="card card-sm border-0 mb-3 mb-md-0">
+    							<img src={image1} alt="..." className="img-about w-50"/>
+    							<div className="">
+    								<h5 className="card-title">
+    									Jane Doe, <small className="text-muted">Copywriter</small>
+    								</h5>
+                    <div className="widget">
+                       <ul className="social">
+                          <li><a href="https://www.facebook.com"><i className="fab fa-facebook-f"></i></a></li>
+                          <li><a href="https://twitter.com"><i className="fab fa-twitter"></i></a></li>
+                          <li><a href="https://instagram.com"><i className="fab fa-instagram"></i></a></li>
+                      </ul>
+                    </div>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section className="section py-3">
+    			<div className="container about">
+    				<div className="row">
+    					<div className="col-md-2">
+    						<div className="title">Our clients</div>
+    					</div>
+    					<div className="col-md-10">
+    						<h3 className="mb-4">
+    							Some of our <span className="text-primary">happy</span> clients
+    						</h3>
+    						<p className="text-muted mb-5">
+    							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit at nesciunt amet impedit rem facere placeat dicta iste atque recusandae earum voluptatem ea alias, sunt quo, qui ratione, error eius.
+    						</p>
+    						<div className="form-row align-items-center">
+    							<div className="col-6 col-md">
+    								<a href="#" className="brand-item mb-3 mb-md-0">
+    									<i className="fab fa-angrycreative"></i>
+    								</a>
+    							</div>
+    							<div className="col-6 col-md">
+    								<a href="#" className="brand-item mb-3 mb-md-0">
+    									<i className="fab fa-cpanel"></i>
+    								</a>
+    							</div>
+    							<div className="col-6 col-md">
+    								<a href="#" className="brand-item mb-3 mb-md-0">
+    									<i className="fab fa-hooli"></i>
+    								</a>
+    							</div>
+    							<div className="col-6 col-md">
+    								<a href="#" className="brand-item mb-3 mb-md-0">
+    									<i className="fab fa-ember"></i>
+    								</a>
+    							</div>
+    							<div className="col-6 col-md">
+    								<a href="#" className="brand-item">
+    									<i className="fab fa-stripe"></i>
+    								</a>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</section>
+
+
+</div>
+
+        <Contact />
+      </div>
+    )
+  }
+}
+
+
+export default about
