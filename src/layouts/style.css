@@ -869,12 +869,22 @@ option.placeholder{
     }
  }
 @media (min-width:961px)  {
-
   .img-fluid {
    max-width: 100%;
    height: auto;
  }
-
+ div.bg-banner{
+   height: 550px;
+ }
+ img.intro-image {
+   right: auto;
+   left: 50%;
+   margin-left: 250px;
+   bottom: auto;
+   top: 6%;
+   width: 435px;
+   height: 285px
+   }
  }
 
 @media (min-width:1025px) {
