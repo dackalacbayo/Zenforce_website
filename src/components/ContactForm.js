@@ -9,7 +9,7 @@ const InputField = props => (
    <div className="form-row">
      <div className="col-md-12">
        <div><label className="col-form-label">{props.name}</label> </div>
-       <Input fluid type={props.type} placeholder={props.name} name={props.fieldKey} onChange={props.onChange}/>
+       <Input fluid type={props.type} placeholder={props.name} name={props.fieldKey} onChange={props.onChange} required/>
      </div>
     </div>
 )
@@ -89,22 +89,16 @@ class ContactForm extends Component {
 
 render() {
 
-  const items = [
-        {name:"Name", fieldKey:"name", type:"text"},
-        {name:"Email", fieldKey:"email", type:"email"},
-        {name:"Job Title", fieldKey:"jobTitle", type:"text"},
-        {name:"Phone", fieldKey:"phone", type:"text"},
+const items = [
+  {name:"Name", fieldKey:"name", type:"text"},
+  {name:"Email", fieldKey:"email", type:"email"},
+  {name:"Job Title", fieldKey:"jobTitle", type:"text"},
+  {name:"Phone", fieldKey:"phone", type:"text"},
+]
 
-    ]
-
-const company = [
-        {name:"Company Size", fieldKey:"companySize"},
-        {name:"Industry", fieldKey:"industry"},
-    ]
       return (
           <div className="pt-4">
             <Button type="button" className="btn mr-2 btn-lg"  onClick={this.toggle}> Contact Us Now</Button>
-
 
             <Modal className="modal-lg" isOpen={this.state.modal} toggle={this.toggle}>
               <ModalHeader toggle={this.close}>
@@ -130,7 +124,7 @@ const company = [
                           </div>
                           <div className="col-lg-4 form-group">
                             <label className="col-form-label">Company Name</label>
-                            <Input fluid placeholder="Company Name" name="companyName" width={16}/>
+                            <Input fluid placeholder="Company Name" name="companyName" width={16} required/>
 
                             <label className="col-form-label">Industry</label><br/>
                             <select className="select_industry" name="industry" required>
@@ -143,14 +137,14 @@ const company = [
                               {optionCompSize}</select>
 
                             <label className="col-form-label">Message</label>
-                            <TextArea className="form-control" name="message" id="message-text"/>
+                            <TextArea className="form-control" name="message" id="message-text" required/>
                           </div>
                       </div>
                         </Segment>
-                      </Segment.Group>
+                        </Segment.Group>
                 </ModalBody>
                   <ModalFooter>
-                      <Button className="secondary" type="submit" width={16}> <Icon name='send' /> Send</Button>
+                      <button className="btn more mr-3 py-2 pl-4 pr-4 btn-lg" ><Icon name='send' />Send</button>
                   </ModalFooter>
                 </form>
               </Modal>

@@ -4,53 +4,62 @@ import logo from '../assets/images/white_logo_transparent@2x.png'
 import Contact from '../components/Contact'
 import ContactForm from '../components/ContactForm'
 import { Header, Icon, Segment,Label, Dropdown,Grid,Input, TextArea, Divider, Button, Select } from 'semantic-ui-react'
-
 import image1 from '../assets/images/twodevices@2x.png'
 import image2 from '../assets/images/project-desktop-just-things.jpg'
 import image3 from '../assets/images/project-mobile-zen-garden.jpg'
 
 
 const articles = [
-  {title:'Minimalist Chandelier' ,by:'Branding, Design' , date:'September 27, 2017' , image:image1,
+  {title:'Minimalist Chandelier' ,by:'Branding, Design' , date:'September 27, 2017' , image:image1, href:'https://www.facebook.com/',
     desc:'Just then her head struck against the roof of the hall in fact she was now more than nine feet high and she at once took up the little golden key and hurried off to the garden door.	The first question of course was, how to get dry again: they had a consultation about this, and after a few minutes it seemed quite natural to Alice to find herself talking familiarly with them.'},
-  {title:'Standard Shape' ,by:'Branding, Design' , date:'September 27, 2017' , image:image2,
+  {title:'Standard Shape' ,by:'Branding, Design' , date:'September 27, 2017' , image:image2, href:'https://www.instagram.com/',
     desc:'Just then her head struck against the roof of the hall in fact she was now more than nine feet high and she at once took up the little golden key and hurried off to the garden door.	The first question of course was, how to get dry again: they had a consultation about this, and after a few minutes it seemed quite natural to Alice to find herself talking familiarly with them.'},
-  {title:'Street Fashion' ,by:'Branding, Design' , date:'September 27, 2017' , image:image3,
+  {title:'Street Fashion' ,by:'Branding, Design' , date:'September 27, 2017' , image:image3, href:'https://www.twitter.com/',
+    desc:'Just then her head struck against the roof of the hall in fact she was now more than nine feet high and she at once took up the little golden key and hurried off to the garden door.	The first question of course was, how to get dry again: they had a consultation about this, and after a few minutes it seemed quite natural to Alice to find herself talking familiarly with them.'},
+  {title:'Standard Shape' ,by:'Branding, Design' , date:'September 27, 2017' , image:image2, href:'https://www.instagram.com/',
+    desc:'Just then her head struck against the roof of the hall in fact she was now more than nine feet high and she at once took up the little golden key and hurried off to the garden door.	The first question of course was, how to get dry again: they had a consultation about this, and after a few minutes it seemed quite natural to Alice to find herself talking familiarly with them.'},
+  {title:'Street Fashion' ,by:'Branding, Design' , date:'September 27, 2017' , image:image3, href:'https://www.twitter.com/',
     desc:'Just then her head struck against the roof of the hall in fact she was now more than nine feet high and she at once took up the little golden key and hurried off to the garden door.	The first question of course was, how to get dry again: they had a consultation about this, and after a few minutes it seemed quite natural to Alice to find herself talking familiarly with them.'},
 ]
 
-
-var arr2 = articles.slice(0,2);
-console.log("articles",arr2);
-
-const ArticleItem = ({title,by,date,image,desc}) => (
+const ArticleItem = art => (
   <article id="113" className="post post-113 type-post status-publish format-standard has-post-thumbnail hentry category-benefits-of-field-workforce-management tag-fieldworkforcemanagement">
     <div className="post-head">
-      <h2 className="post-title text-center"><a className="article-title" href="/">{title}</a></h2>
+      <h2 className="post-title text-center"><a className="article-title" href="/">{art.title}</a></h2>
         <div className="post-meta text-center mb-4">
-          <span className="author">By <a href="/" title="Posts by Team TrackOne" rel="author">{by}</a></span> &bull;
-          <span className="date">{date}</span>
+          <span className="author">By <a href="/" title="Posts by Team TrackOne" rel="author">{art.by}</a></span> &bull;
+          <span className="date">{art.date}</span>
         </div>
     </div>
     <div className="featured-media text-center pb-3" >
-      <a href="/"><img width="780" height="330" src={image}/></a>
+      <a href="/"><img width="780" height="330" src={art.image}/></a>
     </div>
     <div className="post-content pt-3">
-      <p>{desc.substring(0,300)+"..."}</p>
-
+      <p>{art.desc.substring(0,300)+"..."}</p>
     <div className="post-permalink pt-3">
       <a href="/" className="btn btn-default">Continue Reading</a></div>
     </div>
   </article>
 )
 
-const RecentPosts = ({title,arr2}) => (
-    <div className="py-2">
-      <li>
-        <a href="/">{title}</a>
-      </li>
-    </div>
+const mappingFunction = p => (
+  <div className="py-2">
+    <li>
+      <a href={p.href}>{p.title}</a>
+    </li>
+  </div>
 )
+
+const titles = articles.map(mappingFunction);
+// console.log(titles.slice(0,2))
+
+var RecentPosts = titles.slice(0,5);
+// console.log("aaa", arr2)
+
+const article = articles.map(ArticleItem);
+
+var Articles = article.slice(0,5);
+console.log("articles",Articles);
 
 
 
@@ -72,8 +81,8 @@ class blog extends Component {
         <div className="container blog">
           <div className="row pb-5">
             <div className="col-md-8">
-            {articles.map((article) => <ArticleItem {...article} />)}
-          </div>
+              {Articles}
+            </div>
 
             <div className="col-md-4">
               <div id="email-subscribers-2" className="widget widget_text elp-widget"><h4 className="title">Zenforce Management</h4>
@@ -107,15 +116,13 @@ class blog extends Component {
 
               <div id="recent-posts-4" className="widget widget_recent_entries"><h4 className="title">Recent Posts</h4>
               	<ul>
-                    {articles.map((post) => <RecentPosts {...post} />)}
+                  {RecentPosts}
 				        </ul>
 		          </div>
-
             </div>
-
+          </div>
         </div>
       </div>
-    </div>
     )
   }
 }

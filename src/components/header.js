@@ -28,7 +28,7 @@ const Header = () => (
               <a className="nav-link js-scroll-trigger" href="./about">About</a>
            </li>
            <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="./#">Contact</a>
+              <a className="nav-link js-scroll-trigger" href="./contact">Contact</a>
            </li>
            <li className="nav-item">
              <a className="nav-link js-scroll-trigger" href="./faq">FaQ</a>

@@ -16,7 +16,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6e91766a8e0b783386cf0972fce6bb2e",
+        "contentDigest": "b47d9998b193a9230fd4fb40bdb0922f",
         "description": "Plugin dev-404-page",
         "owner": "internal-data-bridge"
       }
@@ -423,12 +423,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-05-04T00:15:58.533Z",
+      "buildTime": "2018-05-06T23:48:24.204Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "4fa4f1abf51747e903d1ce0bd071e69c",
+        "contentDigest": "e8f72455a15a02efc1c96b466e13691b",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -449,7 +449,28 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5919a89458eb96452a9ac94d7f6f5504",
+        "contentDigest": "e42d405edfc60fadb9c09785b632f674",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /about/": {
+      "layout": "index",
+      "jsonName": "about.json",
+      "internalComponentName": "ComponentAbout",
+      "path": "/about/",
+      "component": "C:/Users/AGCUSER/zenforce-landing/src/pages/about.js",
+      "componentChunkName": "component---src-pages-about-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "C:/Users/AGCUSER/zenforce-landing/src/pages/about.js",
+      "id": "SitePage /about/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "3031447649fde80616ea199e10c57aca",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -470,7 +491,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "ddfee4a4318a8a380f3d99e3ca98d42c",
+        "contentDigest": "14076e000d81ac982b9e8f93e94cecf5",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -491,7 +512,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "322e7be7ef9594793dc774c5edc3049e",
+        "contentDigest": "d3d28b7785d75e3e0da438b631d8db5a",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -512,7 +533,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "2eb6cb5e1129df880fb4647b970e46d9",
+        "contentDigest": "2c9aae522b6c30e119f410038fb7eaf7",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -533,7 +554,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f98b908b644ee6d1de75f59b72528857",
+        "contentDigest": "7cb6d34077d0a6ebb3db1c6b885c3902",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -554,7 +575,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6ea8423aa25e422814bd0ee293261de7",
+        "contentDigest": "80882e425bbfbe4748c2608bfcb93af8",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -575,7 +596,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d4603dd2c9f7b25434722d56d98c9e5f",
+        "contentDigest": "bda671b28c7720335666ccd51926a928",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -596,28 +617,28 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "fb1c2feb9388dc5ade91367f0fe77a49",
+        "contentDigest": "30483dbaa5c1d71abec2ee4461335d2f",
         "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /about/": {
+    "SitePage /contact/": {
       "layout": "index",
-      "jsonName": "about.json",
-      "internalComponentName": "ComponentAbout",
-      "path": "/about/",
-      "component": "C:/Users/AGCUSER/zenforce-landing/src/pages/about.js",
-      "componentChunkName": "component---src-pages-about-js",
+      "jsonName": "contact.json",
+      "internalComponentName": "ComponentContact",
+      "path": "/contact/",
+      "component": "C:/Users/AGCUSER/zenforce-landing/src/pages/contact.js",
+      "componentChunkName": "component---src-pages-contact-js",
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "C:/Users/AGCUSER/zenforce-landing/src/pages/about.js",
-      "id": "SitePage /about/",
+      "componentPath": "C:/Users/AGCUSER/zenforce-landing/src/pages/contact.js",
+      "id": "SitePage /contact/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "e03e9d91539a00939289efdc0f26c33a",
+        "contentDigest": "cc4d685fb80556657804b4407f5c2e35",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }

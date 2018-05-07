@@ -134,7 +134,7 @@ class features extends Component {
     </div>
 </div>
   <hr className="features"/>
-      <div className="section light-bg pb-5 pt-4 my-5" id="features">
+      <div className="section light-bg pb-5 pt-4 my-3" id="features">
              <div className="container">
                  <div className="section-title">
                      <h3 className="other-features pb-5">Other Features</h3>

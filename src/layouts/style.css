@@ -1,4 +1,4 @@
-h1,h2,h3,h4,h5,h6,p,li,small,span,label {
+h1,h2,h3,h4,h5,h6,p,li,small,span,label,div {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important ;
 }
 
@@ -22,6 +22,16 @@ div.bg-banner{
 
 section#contactUs{
       margin-top: 25px;
+}
+
+#contact-us .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+path {
+  fill: #efefee;
 }
 
 /*features*/
@@ -120,7 +130,8 @@ section.footer{
 
 nav#mainNav{
   box-shadow:0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-  text-transform: uppercase;;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 div.row.footer{
     margin-top: 30px;
@@ -159,6 +170,7 @@ button.btn.more{
   font-size: 14px;
   background-color: #185a9d;
   color:white;
+  box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.26);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 button.btn.more:hover{
@@ -174,6 +186,7 @@ button.btn.more.features{
   font-size: 14px;
   background-color: #185a9d;
   color:white;
+  box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.26);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 button.btn.more.features:hover{
@@ -241,7 +254,7 @@ p.lead.black{
   font-size:14px;
   padding: 5px;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 400;
   color:black;
 }
 
@@ -468,6 +481,14 @@ hr.banner {
   border-top: 2px solid rgba(255, 253, 253, 0.31);
 }
 
+h1.zenforce-header{
+  color: #fff;
+  letter-spacing: 12px;
+  font-weight: 300;
+  line-height: 1.15em;
+  text-shadow: -5px 4px 9px rgba(0,0,0,0.4);
+}
+
 hr.features {
     background: linear-gradient(to bottom, #00d9e6 0%, #008fc5 100%);
     height: 8px;
@@ -613,6 +634,7 @@ a.article-title, a.article-title:hover{
     margin-bottom: 21px;
     position: relative;
     text-transform: uppercase;
+    font-size: 15px;
 }
 
 .widget .social li a i {
@@ -678,9 +700,7 @@ div#email-subscribers-2, div#futura_social_links_widget-2, div#categories-4, div
 }
 
 .post .featured-media img {
-    width: 420px;
     text-align: justify;
-    height: 300px;
 }
 /*blog*/
 
@@ -744,7 +764,7 @@ h2.feat-title {
     z-index: 1;
 }
 .title {
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.025em;
     text-transform: uppercase;
@@ -774,9 +794,28 @@ h2.feat-title {
 }
 /*about*/
 
+
+.fusion-separator.sep-shadow {
+  background: radial-gradient(ellipse at 50% -50% , #e0dede 0px, rgba(255, 255, 255, 0) 80%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 80%;
+}
+.fusion-separator.sep-shadow:after {
+    display: block;
+    margin-top: 10px;
+    height: 6px;
+    width: 100%;
+    content: '';
+    background: radial-gradient(ellipse at 50% -50%,rgba(0,0,0,.5) 0,rgba(255,255,255,0) 65%);
+}
+
+
 /* Media */
 @media (min-width:100px)  {
-
  }
 
  @media (min-width:320px)  {
@@ -788,17 +827,22 @@ h2.feat-title {
      width: 50%;
      margin-top: -20px;
    }
-
-
-img.intro-image {
-    right: auto;
-    left: 50%;
-    margin-left: -150px;
-    bottom: auto;
-    top: 60%;
-    width: 320px;
-    height: 200px;
- }
+   h1.zenforce-header{
+     color: #fff;
+     letter-spacing: 10px;
+     font-weight: 300;
+     line-height: 1.15em;
+     text-shadow: -5px 4px 9px rgba(0,0,0,0.4);
+   }
+  img.intro-image {
+      right: auto;
+      left: 50%;
+      margin-left: -150px;
+      bottom: auto;
+      top: 60%;
+      width: 320px;
+      height: 200px;
+   }
 }
 select:invalid { color: gray; }
 option.placeholder{

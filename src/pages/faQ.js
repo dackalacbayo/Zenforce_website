@@ -56,6 +56,9 @@ class faQ extends Component {
             </div>
           </div>
                   <div className="container pt-5 pb-5">
+                      <div className ="f_rht ml-5 mr-5 mb-5">
+                          <p className="lead black">Here are the most frequently asked questions at ZenForce. If you have a question not answered here - or throughout our webiste - please <a href="./contact">Contact Us</a>.</p>
+                      </div>
                       <div className="row pb-5">
                           <div className="col-lg-8 col-md-10 col-sm-12 mx-auto">
                               <h1 className="faq mb-2">Product</h1>
@@ -72,7 +75,6 @@ class faQ extends Component {
                   </div>
 
                 <Contact />
-
             </div>
     )
   }

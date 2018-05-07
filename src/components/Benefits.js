@@ -90,7 +90,7 @@ class Benefits extends Component {
        <div className="row justify-content-center text-center section-outro">
            <div className="col-lg-4 col-md-5">
                <h6>Detailed Overview</h6>
-               <p>Wingmans component index showcases the full breadth of features at a glance</p>
+               <p>Lorem ipsum dolor sit amet, omnis tractatos ad sea. Duo elitr abhorreant eu, ex vis mundi quaestio intellegebat. </p>
                   <Link to="/benefits"><button className="btn more mr-2 btn-lg" >View More &rsaquo;</button></Link>
            </div>
 

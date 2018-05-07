@@ -43,7 +43,7 @@ const Banner = () => (
       <div className="position-relative overflow-hidden p-3 p-md-5 text-center">
         <div className="col-md-5 p-lg-6 mx-sm-4 my-5">
           <div className="panel">
-            <h1 className="display-4 font-weight-normal">ZenForce</h1>
+            <h1 className="zenforce-header display-4 font-weight-normal">ZenForce</h1>
             <hr className="banner"/>
             <p className="lead font-weight-normal">Zenforce is the easiest way to manage your work force. Whether you’re a sales team, collection team, repair team. Zenforce is here to help you tick off all your field operations needs.<br/><br/>
             <a href="#benefits"><Button className="button discover" ><span className="button">Discover More <i className="aa fas fa-angle-double-right"></i> </span></Button></a></p><br/>

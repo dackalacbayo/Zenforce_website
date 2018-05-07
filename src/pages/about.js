@@ -9,6 +9,48 @@ import image4 from '../assets/images/if_39-Globe_34330.png'
 import image5 from '../assets/images/if_view_126581.png'
 import image6 from '../assets/images/if_kservices_18068.png'
 
+const ourTeam = [
+  {name:'Richard Roe', position:'Creative Director',image:image1,facebook:'https://www.facebook.com/',twitter:'https://www.twiiter.com/',instagram:'https://www.instagram.com/'},
+  {name:'Ann Doe', position:'Designer', image:image1,facebook:'https://www.facebook.com/',twitter:'https://www.twiiter.com/',instagram:'https://www.instagram.com/'},
+  {name:'Jane Doe', position:'Copywriter', image:image1,facebook:'https://www.facebook.com/',twitter:'https://www.twiiter.com/',instagram:'https://www.instagram.com/'},
+]
+
+const ourClients = [
+  {icon:'fab fa-facebook',href:'https://www.facebook.com/'},
+  {icon:'fab fa-twitter',href:'https://www.twitter.com/'},
+  {icon:'fab fa-instagram',href:'https://www.instagram.com/'},
+  {icon:'fab fa-google', href:'https://www.google.com/'},
+  {icon:'fab fa-github',href:'https://www.github.com/'},
+]
+
+const OurTeam = ({name, position, image, facebook, twitter, instagram}) => (
+  <div className="col-md-4">
+    <div className="card card-sm border-0 mb-3 mb-md-0">
+      <img src={image} alt="..." className="img-about w-50" />
+      <div className="">
+        <h5 className="card-title ">
+          {name}, <small className="text-muted">{position}</small>
+        </h5>
+        <div className="widget">
+           <ul className="social">
+              <li><a href={facebook}><i className="fab fa-facebook-f"></i></a></li>
+              <li><a href={twitter}><i className="fab fa-twitter"></i></a></li>
+              <li><a href={instagram}><i className="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+)
+
+const OurClients = ({icon, href}) => (
+  <div className="col-6 col-md">
+    <a href={href} className="brand-item mb-3 mb-md-0">
+      <i className={icon}></i>
+    </a>
+  </div>
+)
+
 
 class about extends Component {
   render(){
@@ -34,13 +76,11 @@ class about extends Component {
             <div className="container about py-5">
               <div className="row">
                 <div className="col-md-2">
-                  <div className="title">
-                    Two words about our company
-                  </div>
+                  <div className="title"> About our company </div>
                 </div>
                 <div className="col-md-5">
                   <h3 className="mb-4">
-                    We help people find great products at a <span className="text-primary">reasonable</span> price
+                  We help people find great products at a <span className="text-primary">reasonable</span> price
                   </h3>
                     <blockquote className="blockquote">
                       <p className="mb-0">
@@ -78,57 +118,7 @@ class about extends Component {
     					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel distinctio deserunt dolor culpa repellat iusto nostrum tempora placeat fuga facere mollitia adipisci, animi, reiciendis dicta quam obcaecati ad quibusdam eius?
     				</p>
     				<div className="row">
-    					<div className="col-md-4">
-    						<div className="card card-sm border-0 mb-3 mb-md-0">
-    							<img src={image1} alt="..." className="img-about w-50"/>
-    							<div className="">
-    								<h5 className="card-title ">
-    									Richard Roe, <small className="text-muted">Creative Director</small>
-    								</h5>
-                    <div className="widget">
-                       <ul className="social">
-                          <li><a href="https://www.facebook.com"><i className="fab fa-facebook-f"></i></a></li>
-                          <li><a href="https://twitter.com"><i className="fab fa-twitter"></i></a></li>
-                          <li><a href="https://instagram.com"><i className="fab fa-instagram"></i></a></li>
-                      </ul>
-                    </div>
-    							</div>
-    						</div>
-    					</div>
-    					<div className="col-md-4">
-    						<div className="card card-sm border-0 mb-3 mb-md-0">
-    							<img src={image1} alt="..." className="img-about w-50"/>
-    							<div className="">
-    								<h5 className="card-title">
-    									Ann Doe, <small className="text-muted">Designer</small>
-    								</h5>
-                    <div className="widget">
-                       <ul className="social">
-                          <li><a href="https://www.facebook.com"><i className="fab fa-facebook-f"></i></a></li>
-                          <li><a href="https://twitter.com"><i className="fab fa-twitter"></i></a></li>
-                          <li><a href="https://instagram.com"><i className="fab fa-instagram"></i></a></li>
-                      </ul>
-                    </div>
-    							</div>
-    						</div>
-    					</div>
-    					<div className="col-md-4">
-    						<div className="card card-sm border-0 mb-3 mb-md-0">
-    							<img src={image1} alt="..." className="img-about w-50"/>
-    							<div className="">
-    								<h5 className="card-title">
-    									Jane Doe, <small className="text-muted">Copywriter</small>
-    								</h5>
-                    <div className="widget">
-                       <ul className="social">
-                          <li><a href="https://www.facebook.com"><i className="fab fa-facebook-f"></i></a></li>
-                          <li><a href="https://twitter.com"><i className="fab fa-twitter"></i></a></li>
-                          <li><a href="https://instagram.com"><i className="fab fa-instagram"></i></a></li>
-                      </ul>
-                    </div>
-    							</div>
-    						</div>
-    					</div>
+              {ourTeam.map((team) => <OurTeam {...team} />)}
     				</div>
     			</div>
     		</div>
@@ -149,40 +139,13 @@ class about extends Component {
     							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit at nesciunt amet impedit rem facere placeat dicta iste atque recusandae earum voluptatem ea alias, sunt quo, qui ratione, error eius.
     						</p>
     						<div className="form-row align-items-center">
-    							<div className="col-6 col-md">
-    								<a href="#" className="brand-item mb-3 mb-md-0">
-    									<i className="fab fa-angrycreative"></i>
-    								</a>
-    							</div>
-    							<div className="col-6 col-md">
-    								<a href="#" className="brand-item mb-3 mb-md-0">
-    									<i className="fab fa-cpanel"></i>
-    								</a>
-    							</div>
-    							<div className="col-6 col-md">
-    								<a href="#" className="brand-item mb-3 mb-md-0">
-    									<i className="fab fa-hooli"></i>
-    								</a>
-    							</div>
-    							<div className="col-6 col-md">
-    								<a href="#" className="brand-item mb-3 mb-md-0">
-    									<i className="fab fa-ember"></i>
-    								</a>
-    							</div>
-    							<div className="col-6 col-md">
-    								<a href="#" className="brand-item">
-    									<i className="fab fa-stripe"></i>
-    								</a>
-    							</div>
+                  {ourClients.map((client) => <OurClients {...client} />)}
     						</div>
     					</div>
     				</div>
     			</div>
     		</section>
-
-
 </div>
-
         <Contact />
       </div>
     )
