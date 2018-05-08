@@ -20,6 +20,11 @@ const articles = [
     desc:'Just then her head struck against the roof of the hall in fact she was now more than nine feet high and she at once took up the little golden key and hurried off to the garden door.	The first question of course was, how to get dry again: they had a consultation about this, and after a few minutes it seemed quite natural to Alice to find herself talking familiarly with them.'},
   {title:'Street Fashion' ,by:'Branding, Design' , date:'September 27, 2017' , image:image3, href:'https://www.twitter.com/',
     desc:'Just then her head struck against the roof of the hall in fact she was now more than nine feet high and she at once took up the little golden key and hurried off to the garden door.	The first question of course was, how to get dry again: they had a consultation about this, and after a few minutes it seemed quite natural to Alice to find herself talking familiarly with them.'},
+  {title:'Standard Shape' ,by:'Branding, Design' , date:'September 27, 2017' , image:image2, href:'https://www.instagram.com/',
+    desc:'Just then her head struck against the roof of the hall in fact she was now more than nine feet high and she at once took up the little golden key and hurried off to the garden door.	The first question of course was, how to get dry again: they had a consultation about this, and after a few minutes it seemed quite natural to Alice to find herself talking familiarly with them.'},
+  {title:'Street Fashion' ,by:'Branding, Design' , date:'September 27, 2017' , image:image3, href:'https://www.twitter.com/',
+    desc:'Just then her head struck against the roof of the hall in fact she was now more than nine feet high and she at once took up the little golden key and hurried off to the garden door.	The first question of course was, how to get dry again: they had a consultation about this, and after a few minutes it seemed quite natural to Alice to find herself talking familiarly with them.'},
+
 ]
 
 const ArticleItem = art => (
@@ -54,12 +59,12 @@ const titles = articles.map(mappingFunction);
 // console.log(titles.slice(0,2))
 
 var RecentPosts = titles.slice(0,5);
-// console.log("aaa", arr2)
+// console.log("RecentPosts", RecentPosts)
 
 const article = articles.map(ArticleItem);
 
 var Articles = article.slice(0,5);
-console.log("articles",Articles);
+// console.log("articles",Articles);
 
 
 

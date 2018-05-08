@@ -76,7 +76,7 @@ class about extends Component {
             <div className="container about py-5">
               <div className="row">
                 <div className="col-md-2">
-                  <div className="title"> About our company </div>
+                  <div className="title-about"> About our company </div>
                 </div>
                 <div className="col-md-5">
                   <h3 className="mb-4">
@@ -110,7 +110,7 @@ class about extends Component {
     	<div className="container about">
     		<div className="row">
     			<div className="col-md-2">
-    				<div className="title">	Our team</div>
+    				<div className="title-about">	Our team</div>
     			</div>
     			<div className="col-md-10">
     				<h3 className="mb-4">	People behind the scenes</h3>
@@ -129,7 +129,7 @@ class about extends Component {
     			<div className="container about">
     				<div className="row">
     					<div className="col-md-2">
-    						<div className="title">Our clients</div>
+    						<div className="title-about">Our clients</div>
     					</div>
     					<div className="col-md-10">
     						<h3 className="mb-4">

@@ -65,7 +65,7 @@ class benefits extends Component {
           </div>
             <div className="pt-5 pb-5 mb-2" id="content-14">
               <div className="container pt-3">
-              {benefitss.map((bene) => <BenefitItem {...bene} />)}
+                {benefitss.map((bene) => <BenefitItem {...bene} />)}
               </div>
             </div>
             </div>

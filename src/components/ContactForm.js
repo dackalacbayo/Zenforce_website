@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Modal, ModalHeader, ModalBody, ModalFooter, Form } from 'reactstrap';
 import { Header, Icon, Segment,Label, Dropdown,Grid,Input, TextArea, Divider, Button, Select } from 'semantic-ui-react'
 import image1  from '../assets/images/if_window_screen_with_mobile_icon_2541663.png'
-
+import logo  from '../assets/images/white_logo_transparent@2x.png'
 
 const InputField = props => (
    <div className="form-row">
@@ -102,10 +102,9 @@ const items = [
 
             <Modal className="modal-lg" isOpen={this.state.modal} toggle={this.toggle}>
               <ModalHeader toggle={this.close}>
-              <div className="row">
+              <div className="row text-center">
                   <div className="col">
                       <h5 className="h5">Send Us a Message to get a Free Demo & Quotations</h5>
-
                   </div>
               </div>
                 </ModalHeader>
@@ -114,10 +113,42 @@ const items = [
                     <Segment.Group horizontal>
                         <Segment className="m-3">
                         <div className="row">
-                        <div className="col-lg-4 form-group text-center mt-5">
+                        <div className="col-lg-4 form-group text-center">
                         <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="tab-1">
-                            <img alt="Image" className="img-modal img-fluid box-shadow" height="200px" width="300px" src={image1} />
-                        </div>
+                      <div className="contact-information">
+
+                        <ul className="list-unstyled text-small">
+                         <a href='#'><img className="sec3_img" src={logo} alt="generic"/></a><br/>
+                         <small className="d-block mb-3 text-muted">&copy; 2017-2018</small>
+                        </ul>
+                          <div className="single-contact-info d-flex">
+                              <div className="contact-icon mr-15">
+                                <i className="fas fa-location-arrow"></i>
+                              </div>
+                              <p>4127/ 5B-C Mislane Road,<br/> Gibraltar, UK</p>
+                          </div>
+                          <div className="single-contact-info d-flex">
+                              <div className="contact-icon mr-15">
+                                  <i className="fas fa-phone-volume"></i>
+                              </div>
+                              <p>Main: 709-5125 </p>
+                          </div>
+                          <div className="single-contact-info d-flex">
+                              <div className="contact-icon mr-15">
+                                  <i className="fas fa-at"></i>
+                              </div>
+                              <p>www.iainnovations.com</p>
+                          </div>
+
+
+                          <div className="single-contact-info d-flex">
+                              <div className="contact-icon mr-15">
+                                    <i className="fas fa-envelope"></i>
+                              </div>
+                              <p><a href="/cdn-cgi/l/email-protection" className="__cf_email__">info@innovations.ph</a></p>
+                          </div>
+                      </div>
+                    </div>
                         </div>
                           <div className="col-lg-4 form-group">
                               <FormSection items={items} onChange={this.onChange.bind(this)}/>

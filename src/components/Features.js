@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import image1 from '../assets/images/twodevices@2x.png'
+import image6  from '../assets/images/feature-image.png'
 
 const features = [
     {title: 'Notifications for Individual and broadcast messages', active:false, icon:'feat fas fa-bell',desc:'Donec sed odio dui. Etiam porta sem ut id elit. Morbi leo risus'},
@@ -38,11 +39,14 @@ class Features extends Component {
     return(
       <div className="container text-center">
         <div className="row justify-content-center text-center section-intro">
-            <div className="col-12 col-md-9 col-lg-8 pb-5 py-5">
-                <h2 className="display-4">Product Features</h2>
-            </div>
+          <div className="col-12 col-md-9 col-lg-8 pb-5 py-5">
+          <div className="page-title text-center">
+              <h5 className="title">Features</h5>
+              <div className="space-10"></div>
+          </div>
+              <h2 className="display-4">Powerful Features As Always</h2>
+          </div>
         </div>
-
         <div className="row mb-5 mt-5">
           {features.filter((feat) => {return (feat.active === true)})
                    .map((feat) => {return <FeatureItem {...feat}/>})}
@@ -50,6 +54,7 @@ class Features extends Component {
           <div className="container text-center">
             <Link to="/features"><button className="btn more features mr-2 btn-lg mb-5" >View More &rsaquo;</button></Link>
           </div>
+          
       </div>
     )
   }

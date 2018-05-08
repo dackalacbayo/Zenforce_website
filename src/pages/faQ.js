@@ -9,35 +9,68 @@ const faqsProduct = [
   {question:'Why was my article deleted?', answer:'2Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',id:'collapse-2',href:'#collapse-2', display:true},
   {question:'How do I change the name of an article?', answer:'3Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',id:'collapse-3',href:'#collapse-3', display:true},
   {question:'How do I delete my account?', answer:'4Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',id:'collapse-4',href:'#collapse-4', display:true},
+  {question:'How do I edit a page?', answer:'5Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',id:'collapse-5',href:'#collapse-5', display:true},
+  {question:'Why was my article deleted?', answer:'6Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',id:'collapse-6',href:'#collapse-6', display:true},
+  {question:'How do I change the name of an article?', answer:'7Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',id:'collapse-7',href:'#collapse-7', display:true},
 ]
 
 const faqsSale = [
-  {question:'Who writes the articles on Wikipedia?', answer:'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',id:'collapse-5',href:'#collapse-5', display:true},
-  {question:'Who owns Wikipedia?', answer:'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',id:'collapse-6',href:'#collapse-6', display:true},
-  {question:'Why am I having trouble logging in?', answer:'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',id:'collapse-7',href:'#collapse-7', display:true},
-  {question:'How can I contact Wikipedia?', answer:'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',id:'collapse-8',href:'#collapse-8', display:true},
-  {question:'How do I delete my account?', answer:'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',id:'collapse-9',href:'#collapse-9', display:true},
-  {question:'Who writes the articles on Wikipedia?', answer:'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',id:'collapse-10',href:'#collapse-10', display:true},
+  {question:'Who writes the articles on Wikipedia?', answer:'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',id:'collapse-tab2-1',href:'#collapse-tab2-1', display:true},
+  {question:'Who owns Wikipedia?', answer:'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',id:'collapse-tab2-2',href:'#collapse-tab2-2', display:true},
+  {question:'Why am I having trouble logging in?', answer:'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',id:'collapse-tab2-3',href:'#collapse-tab2-3', display:true},
+  {question:'How can I contact Wikipedia?', answer:'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',id:'collapse-tab2-4',href:'#collapse-tab2-4', display:true},
+  {question:'How do I delete my account?', answer:'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',id:'collapse-tab2-5',href:'#collapse-tab2-5', display:true},
+  {question:'Who writes the articles on Wikipedia?', answer:'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',id:'collapse-tab2-6',href:'#collapse-tab2-6', display:true},
 ]
 
-const FaqDiv = ({question, answer, id, href}) => (
+var array = faqsProduct.reverse();
+var array1 = faqsSale.reverse();
+
+const FaqDiv = faq => (
   <div className="card">
       <div className="card-header panel-heading" role="tab" id="headingOne">
-          <a role="button" className="collapsed text-black" data-toggle="collapse" data-parent="#accordion" data-core="" href={href} aria-expanded="false" aria-controls="collapse1">
+          <a role="button" className="collapsed text-black" data-toggle="collapse" data-parent="#accordion" data-core="" href={faq.href} aria-expanded="false" aria-controls="collapse1">
               <p className="lead black display-5">
-                  <span className="sign mbr-iconfont mbri-arrow-down inactive"></span> {question}
+                  <span className="sign mbr-iconfont mbri-arrow-down inactive"></span> {faq.question}
               </p>
           </a>
       </div>
-      <div id={id} className="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div id={faq.id} className="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne">
           <div className="panel-body p-4">
               <p className="mbr-fonts-style panel-text display-7">
-               {answer}</p>
+               {faq.answer}</p>
           </div>
       </div>
   </div>
-
 )
+
+const mappingFunction = faq => (
+  <div className="card">
+      <div className="card-header panel-heading" role="tab" id="headingOne">
+          <a role="button" className="collapsed text-black" data-toggle="collapse" data-parent="#accordion" data-core="" href={faq.href} aria-expanded="false" aria-controls="collapse1">
+              <p className="lead black display-5">
+                  <span className="sign mbr-iconfont mbri-arrow-down inactive"></span> {faq.question}
+              </p>
+          </a>
+      </div>
+      <div id={faq.id} className="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div className="panel-body p-4">
+              <p className="mbr-fonts-style panel-text display-7">
+               {faq.answer}</p>
+          </div>
+      </div>
+  </div>
+)
+
+const titles = faqsProduct.map(mappingFunction);
+var RecentPosts = titles.slice(0,5);
+
+const titless = faqsSale.map(mappingFunction);
+var RecentPostss = titless.slice(0,5);
+
+
+// {faqsSale.filter((faq) => {return (faq.display === true)})
+//          .map((faq) => {return <FaqDiv {...faq}/>})}
 
 class faQ extends Component {
   render(){
@@ -63,13 +96,12 @@ class faQ extends Component {
                           <div className="col-lg-8 col-md-10 col-sm-12 mx-auto">
                               <h1 className="faq mb-2">Product</h1>
                               <hr className="mt-3 mb-4"/>
-                              {faqsProduct.filter((faq) => {return (faq.display === true)})
-                                       .map((faq) => {return <FaqDiv {...faq}/>})}
+                              {RecentPosts}
 
                               <h1 className="faq mb-2 mt-5">Sales</h1>
                               <hr className="mt-3 mb-4"/>
-                              {faqsSale.filter((faq) => {return (faq.display === true)})
-                                       .map((faq) => {return <FaqDiv {...faq}/>})}
+                              {RecentPostss}
+
                           </div>
                       </div>
                   </div>
