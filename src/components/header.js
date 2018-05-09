@@ -20,21 +20,21 @@ const Header = () => (
                Product
              </a>
              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-               <a className="dropdown-item" href="./benefits">Benefits</a>
-               <a className="dropdown-item" href="./features">Features</a>
+                <Link className="dropdown-item" to="./benefits">Benefits</Link>
+                <Link className="dropdown-item" to="./features">Features</Link>
              </div>
            </li>
            <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="./about">About</a>
+              <Link className="nav-link js-scroll-trigger" to="./about">About</Link>
            </li>
            <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="./contact">Contact</a>
+              <Link className="nav-link js-scroll-trigger" to="./contact">Contact</Link>
            </li>
            <li className="nav-item">
-             <a className="nav-link js-scroll-trigger" href="./faq">FaQ</a>
+              <Link className="nav-link js-scroll-trigger" to="./faq">FaQ</Link>
            </li>
            <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="./blog">Blog</a>
+            <Link className="nav-link js-scroll-trigger" to="./blog">Blog</Link>
            </li>
 
          </ul>

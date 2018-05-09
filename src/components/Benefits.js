@@ -21,7 +21,7 @@ const TabImage = ({image,active,id}) => (
 
 const TabDesc = ({id, href, title, desc, icons }) => (
   <div className="card mb-1 " id="tab-1" data-toggle="tab" href={href} role="tab" aria-controls={id} aria-selected="true">
-      <div className="card-body col-12 col-md-12 col-lg-12">
+      <div className="card-body pointer col-12 col-md-12 col-lg-12">
           <h5><i className={icons}></i>{title}</h5>
           <p>{desc}</p>
       </div>

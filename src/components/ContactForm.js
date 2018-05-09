@@ -121,31 +121,28 @@ const items = [
                          <a href='#'><img className="sec3_img" src={logo} alt="generic"/></a><br/>
                          <small className="d-block mb-3 text-muted">&copy; 2017-2018</small>
                         </ul>
-                          <div className="single-contact-info d-flex">
-                              <div className="contact-icon mr-15">
-                                <i className="fas fa-location-arrow"></i>
-                              </div>
-                              <p>4127/ 5B-C Mislane Road,<br/> Gibraltar, UK</p>
+                          <div className="single-contact-info d-flex py-1">
+                              <div className="contact-icon mr-15 ">
+                                <i className="fas fa-map-marker-alt"></i>
+                              </div><p className="text-left lead black small ml-3">3201 Antel Global Corporate Center, J. Vargas Ave. ,<br/>  Ortigas Center, Pasig City</p>
                           </div>
-                          <div className="single-contact-info d-flex">
+                          <div className="single-contact-info d-flex py-1">
                               <div className="contact-icon mr-15">
                                   <i className="fas fa-phone-volume"></i>
                               </div>
-                              <p>Main: 709-5125 </p>
+                              <p className="lead black small ml-3">709-5125 </p>
                           </div>
-                          <div className="single-contact-info d-flex">
+                          <div className="single-contact-info d-flex py-1">
                               <div className="contact-icon mr-15">
                                   <i className="fas fa-at"></i>
                               </div>
-                              <p>www.iainnovations.com</p>
+                              <a href="http://iainnovations.com/"><p className=" lead black small ml-3"> www.iainnovations.com</p></a>
                           </div>
-
-
-                          <div className="single-contact-info d-flex">
+                          <div className="single-contact-info d-flex py-1">
                               <div className="contact-icon mr-15">
                                     <i className="fas fa-envelope"></i>
                               </div>
-                              <p><a href="/cdn-cgi/l/email-protection" className="__cf_email__">info@innovations.ph</a></p>
+                              <p className="lead black small ml-3"><a className="__cf_email__">info@innovations.ph</a></p>
                           </div>
                       </div>
                     </div>

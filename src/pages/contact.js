@@ -107,8 +107,9 @@ const items = [
                 <div className="panel-left">
                   <h3 className="feat-header-title mt-5">Get in Touch</h3>
                   <p className="lead black">Please fill out the quick form and we will be in touch with lightning speed.</p>
+                  <p className="lead black">Email us with any questions or inquiries or use our contact data. We would be happy to answer your questions.</p>
                 </div>
-              </div>
+                </div>
             </section>
 
   <form method="POST" action="https://formspree.io/dackalacbayo@gmail.com">

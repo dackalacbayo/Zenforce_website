@@ -30,7 +30,7 @@ const FaqDiv = faq => (
   <div className="card">
       <div className="card-header panel-heading" role="tab" id="headingOne">
           <a role="button" className="collapsed text-black" data-toggle="collapse" data-parent="#accordion" data-core="" href={faq.href} aria-expanded="false" aria-controls="collapse1">
-              <p className="lead black display-5">
+              <p className="lead black display-5 mr-3">
                   <span className="sign mbr-iconfont mbri-arrow-down inactive"></span> {faq.question}
               </p>
           </a>
@@ -48,7 +48,7 @@ const mappingFunction = faq => (
   <div className="card">
       <div className="card-header panel-heading" role="tab" id="headingOne">
           <a role="button" className="collapsed text-black" data-toggle="collapse" data-parent="#accordion" data-core="" href={faq.href} aria-expanded="false" aria-controls="collapse1">
-              <p className="lead black display-5">
+              <p className="lead black display-5 mr-3">
                   <span className="sign mbr-iconfont mbri-arrow-down inactive"></span> {faq.question}
               </p>
           </a>
@@ -62,15 +62,11 @@ const mappingFunction = faq => (
   </div>
 )
 
-const titles = faqsProduct.map(mappingFunction);
-var RecentPosts = titles.slice(0,5);
+const product = faqsProduct.map(mappingFunction);
+var ProductQuestions = product.slice(0,5);
 
-const titless = faqsSale.map(mappingFunction);
-var RecentPostss = titless.slice(0,5);
-
-
-// {faqsSale.filter((faq) => {return (faq.display === true)})
-//          .map((faq) => {return <FaqDiv {...faq}/>})}
+const sale = faqsSale.map(mappingFunction);
+var SaleQuestions = sale.slice(0,5);
 
 class faQ extends Component {
   render(){
@@ -83,24 +79,25 @@ class faQ extends Component {
                     <h1 className="profile-title display-4 font-weight-bold mb-2 ">Questions</h1>
                 </div>
                 <div className ="f_rht">
-                    <p className="lead">Frequently asked questions</p><br/>
+                    <p className="lead">Frequently asked questions</p><p className="lead">HOME / FAQ</p><br/><br/>
+
                 </div>
               </div>
             </div>
           </div>
                   <div className="container pt-5 pb-5">
-                      <div className ="f_rht ml-5 mr-5 mb-5">
-                          <p className="lead black">Here are the most frequently asked questions at ZenForce. If you have a question not answered here - or throughout our webiste - please <a href="./contact">Contact Us</a>.</p>
+                      <div className ="f_rht ml-5 mr-5 mb-5 text-center">
+                          <span className="lead black">Here are the most frequently asked questions at ZenForce. If you have a question not answered here - or throughout our webiste - please <Link className="" to="./contact">Contact Us</Link>.</span>
                       </div>
                       <div className="row pb-5">
                           <div className="col-lg-8 col-md-10 col-sm-12 mx-auto">
                               <h1 className="faq mb-2">Product</h1>
                               <hr className="mt-3 mb-4"/>
-                              {RecentPosts}
+                              {ProductQuestions}
 
                               <h1 className="faq mb-2 mt-5">Sales</h1>
                               <hr className="mt-3 mb-4"/>
-                              {RecentPostss}
+                              {SaleQuestions}
 
                           </div>
                       </div>

@@ -10,28 +10,34 @@ import image5 from '../assets/images/if_view_126581.png'
 import image6 from '../assets/images/if_kservices_18068.png'
 
 const benefitss = [
-    {title: 'Never miss a deadline', desc:"Manage your deadlines, save more time on follow ups. Lorem ipsum dolor sit amet, cum nibh error sapientem at. Qui duis summo at, tale tibique conclusionemque pro ut, nec tibique deleniti delectus. Nec tibique deleniti delectus te, zril quaestio conclusionemque vis no", flip:false, icons:'bene fas fa-stopwatch',image:image1, active:true},
-    {title: 'Attain Visibility', desc:"Keep track of your mobile workforce. Lorem ipsum dolor sit amet, cum nibh error sapientem at. Qui duis summo at, tale tibique conclusionemque pro ut, nec tibique deleniti delectus. Nec tibique deleniti delectus te, zril quaestio conclusionemque vis no", flip:true, icons:'bene fas fa-mobile-alt',image:image2, active:true},
-    {title: 'Team Collaborate', desc:"Share your works collaboratively on projects with anyone. Lorem ipsum dolor sit amet, cum nibh error sapientem at. Qui duis summo at, tale tibique conclusionemque pro ut, nec tibique deleniti delectus. Nec tibique deleniti delectus te, zril quaestio conclusionemque vis no ", flip:false, icons:'bene fas fa-users',image:image3, active:true},
-    {title: 'Eliminate Geographic Barriers', desc:"Allow virtual meetings and trainings without having to find a location or make travel arrangements. Lorem ipsum dolor sit amet, cum nibh error sapientem at. Qui duis summo at, tale tibique conclusionemque pro ut, nec tibique deleniti delectus. Nec tibique deleniti delectus te, zril quaestio conclusionemque vis no", flip:true, icons:'bene fas fa-globe',image:image4, active:false},
-    {title: 'Optimize decision making', desc:"Make your decisions as good as possible. Lorem ipsum dolor sit amet, cum nibh error sapientem at. Qui duis summo at, tale tibique conclusionemque pro ut, nec tibique deleniti delectus. Nec tibique deleniti delectus te, zril quaestio conclusionemque vis no", flip:false, icons:'bene fas fa-eye',image:image5, active:false},
-    {title: 'Access anytime anywhere', desc:"Availability of information anytime & anywhere. Lorem ipsum dolor sit amet, cum nibh error sapientem at. Qui duis summo at, tale tibique conclusionemque pro ut, nec tibique deleniti delectus. Nec tibique deleniti delectus te, zril quaestio conclusionemque vis no ", flip:true, icons:'bene fas fa-cogs',image:image6, active:true},
+    {title: 'Never miss a deadline', desc:"Manage your deadlines, save more time on follow ups. Lorem ipsum dolor sit amet, cum nibh error sapientem at. Qui duis summo at, tale tibique conclusionemque pro ut, nec tibique deleniti delectus. Nec tibique deleniti delectus te, zril quaestio conclusionemque vis no",
+        list1:'Mobile first design', list2:'1000×8 SVG icons are included', list3:'Easy customization', list4:'Clean code', flip:false, icons:'bene fas fa-stopwatch',image:image1, active:true},
+    {title: 'Attain Visibility', desc:"Keep track of your mobile workforce. Lorem ipsum dolor sit amet, cum nibh error sapientem at. Qui duis summo at, tale tibique conclusionemque pro ut, nec tibique deleniti delectus. Nec tibique deleniti delectus te, zril quaestio conclusionemque vis no",
+        list1:'Mobile first design', list2:'1000×8 SVG icons are included', list3:'Easy customization', list4:'Clean code', flip:true, icons:'bene fas fa-mobile-alt',image:image2, active:true},
+    {title: 'Team Collaborate', desc:"Share your works collaboratively on projects with anyone. Lorem ipsum dolor sit amet, cum nibh error sapientem at. Qui duis summo at, tale tibique conclusionemque pro ut, nec tibique deleniti delectus. Nec tibique deleniti delectus te, zril quaestio conclusionemque vis no ",
+        list1:'Mobile first design', list2:'1000×8 SVG icons are included', list3:'Easy customization', list4:'Clean code', flip:false, icons:'bene fas fa-users',image:image3, active:true},
+    {title: 'Eliminate Geographic Barriers', desc:"Allow virtual meetings and trainings without having to find a location or make travel arrangements. Lorem ipsum dolor sit amet, cum nibh error sapientem at. Qui duis summo at, tale tibique conclusionemque pro ut, nec tibique deleniti delectus. Nec tibique deleniti delectus te, zril quaestio conclusionemque vis no",
+        list1:'Mobile first design', list2:'1000×8 SVG icons are included', list3:'Easy customization', list4:'Clean code', flip:true, icons:'bene fas fa-globe',image:image4, active:false},
+    {title: 'Optimize decision making', desc:"Make your decisions as good as possible. Lorem ipsum dolor sit amet, cum nibh error sapientem at. Qui duis summo at, tale tibique conclusionemque pro ut, nec tibique deleniti delectus. Nec tibique deleniti delectus te, zril quaestio conclusionemque vis no",
+        list1:'Mobile first design', list2:'1000×8 SVG icons are included', list3:'Easy customization', list4:'Clean code', flip:false, icons:'bene fas fa-eye',image:image5, active:false},
+    {title: 'Access anytime anywhere', desc:"Availability of information anytime & anywhere. Lorem ipsum dolor sit amet, cum nibh error sapientem at. Qui duis summo at, tale tibique conclusionemque pro ut, nec tibique deleniti delectus. Nec tibique deleniti delectus te, zril quaestio conclusionemque vis no ",
+        list1:'Mobile first design', list2:'1000×8 SVG icons are included', list3:'Easy customization', list4:'Clean code', flip:true, icons:'bene fas fa-cogs',image:image6, active:true},
 ]
 
-const BenefitItem = ({title, desc, flip, icons, image}) => (
+const BenefitItem = ({title, desc, flip, icons, image, list1, list2, list3, list4}) => (
   <div className="row mb-5">
     <div className={flip ? "order-md-2 col-lg-8 col-md-12 col-sm-12 ml-auto" : "col-lg-8 col-md-12 col-sm-12 ml-auto"} >
         <h3 className="feat-header-title mt-5">{title}</h3>
         <p className="text-secondary mr-5 mb-3">{desc}</p>
           <ul className="text-secondary list-unstyled mb-4">
               <li className="mb-2">
-                  <i className="fa fa-check mr-2 text-secondary"></i>Mobile first design</li>
+                  <i className="fas other-features fa-check mr-2"></i>{list1}</li>
               <li className="mb-2">
-                  <i className="fa fa-check mr-2 text-secondary"></i>1000×8 SVG icons are included</li>
+                  <i className="fas other-features fa-check mr-2"></i>{list2}</li>
               <li className="mb-2">
-                  <i className="fa fa-check mr-2 text-secondary"></i>Easy customization</li>
+                  <i className="fas other-features fa-check mr-2"></i>{list3}</li>
               <li className="mb-2">
-                  <i className="fa fa-check mr-2 text-secondary"></i>Clean code</li>
+                  <i className="fas other-features fa-check mr-2"></i>{list4}</li>
           </ul>
     </div>
 

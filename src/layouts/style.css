@@ -54,10 +54,11 @@ h1.profile-title{
 /*features*/
 
 /*benefits*/
-div.card-body{
+div.card-body.pointer{
   cursor: pointer;
   width: 100% !important;
 }
+
 
 .card {
   position: relative;
@@ -71,7 +72,7 @@ div.card-body{
   border-radius: 0.25rem;
 }
 
-div.card-body:hover{
+div.card-body.pointer:hover{
   background-color: #f0f0f0;
 }
 
@@ -257,6 +258,13 @@ p.lead{
 p.lead.black{
   font-size:14px;
   padding: 5px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color:black;
+}
+p.lead.black.small{
+  font-size:12px;
+  padding: 2px;
   letter-spacing: 1px;
   font-weight: 400;
   color:black;
@@ -553,13 +561,25 @@ div.modal-footer{
     font-family: 'FontAwesome';
     content: '\25BE';
     float: right;
-    color: #F58723;
-    font-size: 18px;
+    color: #00b5ad;
+    font-size: 30px;
     line-height: 22px;
-    margin-right:5px !important;
-    margin-top: -21px !important;
-
+    margin-right: 5px !important;
+    margin-top: -27px !important;
 }
+
+.card-header.panel-heading:hover {
+    background-color: #00b5ad;
+}
+
+.panel-body{
+  background-color: #ededee;
+}
+
+/* div#headingOne.panel-heading.card-header:active{
+  background-color: red;
+  color: red;
+} */
 
 .panel-heading [data-toggle="collapse"].collapsed:after {
     color: #454444;
@@ -767,6 +787,14 @@ h2.feat-title {
 }
 
 /*feature-page*/
+
+/*faq*/
+h1.faq{
+  text-align:center;
+  text-transform: uppercase;;
+  letter-spacing: 10px;
+}
+/*faq*/
 
 /*about*/
 .section .container {
