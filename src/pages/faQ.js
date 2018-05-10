@@ -79,8 +79,7 @@ class faQ extends Component {
                     <h1 className="profile-title display-4 font-weight-bold mb-2 ">Questions</h1>
                 </div>
                 <div className ="f_rht">
-                    <p className="lead">Frequently asked questions</p><p className="lead">HOME / FAQ</p><br/><br/>
-
+                    <p className="lead">Frequently asked questions</p><br/>
                 </div>
               </div>
             </div>

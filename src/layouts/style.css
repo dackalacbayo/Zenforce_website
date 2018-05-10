@@ -76,7 +76,7 @@ div.card-body.pointer:hover{
   background-color: #f0f0f0;
 }
 
-div.icon.icon-primary{
+div.icon-box.icon-primary{
   max-width: 80px;
   width: 80px;
   height: 80px;
@@ -568,18 +568,31 @@ div.modal-footer{
     margin-top: -27px !important;
 }
 
-.card-header.panel-heading:hover {
-    background-color: #00b5ad;
-}
-
 .panel-body{
   background-color: #ededee;
 }
 
-/* div#headingOne.panel-heading.card-header:active{
-  background-color: red;
-  color: red;
-} */
+.square-icon-box:hover .icon-box-wrapper .icon-box:after {
+    transform: scale(1);
+}
+
+.square-icon-box.primary .icon-box:after {
+    border: 2px solid #50c9c3;
+}
+.square-icon-box .icon-box-wrapper .icon-box:after {
+    width: 98px;
+    height:98px;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: -9px;
+    left: -9px;
+    opacity: 0.8;
+    border-radius: 100px;
+    transform: scale(0.8);
+    transition: all 0.3s;
+}
 
 .panel-heading [data-toggle="collapse"].collapsed:after {
     color: #454444;

@@ -40,6 +40,7 @@ const IndexPage = () => (
 
 const Banner = () => (
     <div className="bg-banner">
+
       <div className="position-relative overflow-hidden p-3 p-md-5 text-center">
         <div className="col-md-5 p-lg-6 mx-sm-4 my-5">
           <div className="panel">

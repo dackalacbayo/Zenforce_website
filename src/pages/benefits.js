@@ -77,6 +77,7 @@ class benefits extends Component {
             </div>
 
         <Contact />
+
       </div>
     )
   }

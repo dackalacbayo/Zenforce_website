@@ -25,9 +25,13 @@ const features = [
 
 const FeatureItem = ({title,icon,desc}) => (
   <div className="col-lg-3 m-0 mb-5 pb-5">
-    <div className="icon icon-primary icon-circle mb-4">
-        <h2 className="featurette-heading py-3 pl-2 pt-4"><i className={icon}></i></h2>
-    </div>
+  <div className="square-icon-box is-landing primary">
+      <div className="icon-box-wrapper">
+          <div className="icon-box icon-primary icon-circle mb-4">
+                <h2 className="featurette-heading py-3 pl-2 pt-4"><i className={icon}></i></h2>
+          </div>
+      </div>
+  </div>
     <h5 className="feature_title">{title}</h5>
     <p className="feature_desc">{desc}</p>
   </div>
@@ -54,7 +58,6 @@ class Features extends Component {
           <div className="container text-center">
             <Link to="/features"><button className="btn more features mr-2 btn-lg mb-5" >View More &rsaquo;</button></Link>
           </div>
-          
       </div>
     )
   }
