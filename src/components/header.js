@@ -9,32 +9,32 @@ const Header = () => (
 
   <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
      <div className="container">
-       <Link className="navbar-brand js-scroll-trigger" to="./#">ZenForce</Link>
+       <Link className="navbar-brand js-scroll-trigger" to="./">ZenForce</Link>
        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
          <span className="navbar-toggler-icon"></span>
        </button>
        <div className="collapse navbar-collapse" id="navbarResponsive">
          <ul className="navbar-nav ml-auto">
              <li className="nav-item dropdown">
-             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a className="nav-link dropdown-toggle  pr-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                Product
              </a>
              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <Link className="dropdown-item" to="./benefits">Benefits</Link>
-                <Link className="dropdown-item" to="./features">Features</Link>
+                <Link className="dropdown-item pr-3" to="./benefits">Benefits</Link>
+                <Link className="dropdown-item pr-3" to="./features">Features</Link>
              </div>
            </li>
-           <li className="nav-item">
-              <Link className="nav-link js-scroll-trigger" to="./about">About</Link>
+           <li className="nav-item ">
+              <Link className="nav-link js-scroll-trigger pr-3" to="./about">About</Link>
            </li>
            <li className="nav-item">
-              <Link className="nav-link js-scroll-trigger" to="./contact">Contact</Link>
+              <Link className="nav-link js-scroll-trigger pr-3" to="./contact">Contact</Link>
            </li>
            <li className="nav-item">
-              <Link className="nav-link js-scroll-trigger" to="./faq">FaQ</Link>
+              <Link className="nav-link js-scroll-trigger pr-3" to="./faq">FaQ</Link>
            </li>
            <li className="nav-item">
-            <Link className="nav-link js-scroll-trigger" to="./blog">Blog</Link>
+            <Link className="nav-link js-scroll-trigger pr-3" to="./blog">Blog</Link>
            </li>
 
          </ul>

@@ -6,7 +6,7 @@ const Footer = () => (
       <footer className="container py-2">
         <div className="row footer">
 
-        <a className="scroll-top" href="#top"><i className="fas fa-angle-up mr-0"></i></a>
+        <a className="scroll-top" href="#"><i className="fas fa-angle-up mr-0"></i></a>
 
           <div className="col-6 col-md">
             <ul className="list-unstyled text-small">

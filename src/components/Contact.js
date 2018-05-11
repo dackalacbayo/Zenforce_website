@@ -8,7 +8,7 @@ class Contact extends Component {
     return(
       <section className="bg-gradient p-0 text-white" id="contact">
        <svg className="decorative-divider" preserveAspectRatio="none" width="100%" height="100" viewBox=" 0 0 100 100">
-           <polygon fill="#F8F9FB" points="0 0 100 0 100 60"></polygon>
+           <polygon fill="#ffffff" points="0 0 100 0 100 60"></polygon>
        </svg>
 
        <div className="container space-lg">

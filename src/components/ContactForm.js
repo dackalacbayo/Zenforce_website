@@ -64,10 +64,10 @@ const industries = [
 ]
 
 const optionIndustries = industries.map((ind) => (
-  <option value={ind.text}> {ind.text} </option>
+  <option className="" value={ind.text}> {ind.text} </option>
 ))
 const optionCompSize = companySize.map((size) => (
-  <option value={size.text}> {size.text} </option>
+  <option className="" value={size.text}> {size.text} </option>
 ))
 
 
@@ -104,7 +104,7 @@ const items = [
               <ModalHeader toggle={this.close}>
               <div className="row text-center">
                   <div className="col">
-                      <h5 className="h5">Send Us a Message to get a Free Demo & Quotations</h5>
+                      <h5 className="h5">Send Us a Message to get a Free Demo & Quotations </h5>
                   </div>
               </div>
                 </ModalHeader>
@@ -172,7 +172,7 @@ const items = [
                         </Segment.Group>
                 </ModalBody>
                   <ModalFooter>
-                      <button className="btn more mr-3 py-2 pl-4 pr-4 btn-lg" ><Icon name='send' />Send</button>
+                      <button className="btn viewMore mr-3 py-2 pl-4 pr-4 btn-lg" ><Icon name='send' />Send</button>
                   </ModalFooter>
                 </form>
               </Modal>

@@ -98,7 +98,7 @@ class blog extends Component {
                         <Input fluid placeholder="Email" name="companyName" width={16}/>
                       </div>
                       <div className="es_button text-center" >
-                        <button className="btn more mr-2 btn-lg" >Subscribe</button>
+                        <button className="btn viewMore mr-2 btn-lg" >Subscribe</button>
                       </div>
                       <div className="es_msg" id="es_widget_msg">
                         <span id="es_msg"></span>

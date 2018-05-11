@@ -96,18 +96,13 @@ const items = [
           </div>
 
           <div className="g-12 cols pointer-wrap">
-          <svg className="pointer" version="1.1" width="100%" viewBox="0 0 100 7" preserveAspectRatio="none">
-          	<path d="M0 0 L50 7 L100 0 Z"></path>
-          </svg>
-
           </div>
 
           <section id="contact-us">
               <div className="wrap">
                 <div className="panel-left">
                   <h3 className="feat-header-title mt-5">Get in Touch</h3>
-                  <p className="lead black">Please fill out the quick form and we will be in touch with lightning speed.</p>
-                  <p className="lead black">Email us with any questions or inquiries or use our contact data. We would be happy to answer your questions.</p>
+                  <p className="lead black">Please fill out the quick form and we will be in touch with lightning speed.<br/>Email us with any questions or inquiries or use our contact data. We would be happy to answer your questions.</p>
                 </div>
                 </div>
             </section>
@@ -144,7 +139,7 @@ const items = [
                </section>
                <section id="contact-us">
                    <div className="wrap">
-                         <button className="btn more mr-3 pl-5 pr-5 btn-lg" ><Icon name='send' />Send</button>
+                         <button className="btn viewMore mr-3 pl-5 pr-5 btn-lg" ><Icon name='send' />Send</button>
                    </div>
                  </section>
            </div>

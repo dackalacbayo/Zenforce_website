@@ -51,12 +51,12 @@ class Features extends Component {
               <h2 className="display-4">Powerful Features As Always</h2>
           </div>
         </div>
-        <div className="row mb-5 mt-5">
+        <div className="row mt-5">
           {features.filter((feat) => {return (feat.active === true)})
                    .map((feat) => {return <FeatureItem {...feat}/>})}
         </div>
           <div className="container text-center">
-            <Link to="/features"><button className="btn more features mr-2 btn-lg mb-5" >View More &rsaquo;</button></Link>
+            <Link to="/features"><button className="btn viewMore mr-2 btn-lg mb-5" >View More &rsaquo;</button></Link>
           </div>
       </div>
     )
