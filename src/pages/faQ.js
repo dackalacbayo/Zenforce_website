@@ -85,7 +85,7 @@ class faQ extends Component {
             </div>
           </div>
                   <div className="container pt-5 pb-5">
-                      <div className ="f_rht ml-5 mr-5 mb-5 text-center">
+                      <div className ="f_rht ml-3 mr-3 mb-5 text-center">
                           <span className="lead black">Here are the most frequently asked questions at ZenForce. If you have a question not answered here - or throughout our webiste - please <Link className="" to="./contact">Contact Us</Link>.</span>
                       </div>
                       <div className="row pb-5">

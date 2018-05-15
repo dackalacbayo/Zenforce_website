@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-37bb88ae416073df7d28.js",
-      "component---src-pages-index-js-37bb88ae416073df7d28.js.map"
+      "component---src-pages-index-js-85e9aa1f7b51c9c4e6bd.js",
+      "component---src-pages-index-js-85e9aa1f7b51c9c4e6bd.js.map"
     ],
     "path---blog": [
       "path---blog-a0e39f21c11f6a62c5ab.js",
@@ -17,24 +17,24 @@
       "path----b3bf2544d3448f1fe499.js.map"
     ],
     "component---src-pages-fa-q-js": [
-      "component---src-pages-fa-q-js-2c09166403f7d15d309c.js",
-      "component---src-pages-fa-q-js-2c09166403f7d15d309c.js.map"
+      "component---src-pages-fa-q-js-c34166eeffe4d2467683.js",
+      "component---src-pages-fa-q-js-c34166eeffe4d2467683.js.map"
     ],
     "component---src-pages-contact-js": [
-      "component---src-pages-contact-js-2a82070992348b7a3272.js",
-      "component---src-pages-contact-js-2a82070992348b7a3272.js.map"
+      "component---src-pages-contact-js-eb8af69ef50aebc05e88.js",
+      "component---src-pages-contact-js-eb8af69ef50aebc05e88.js.map"
     ],
     "component---src-pages-features-js": [
-      "component---src-pages-features-js-bcfb5a3712d6bc2ad665.js",
-      "component---src-pages-features-js-bcfb5a3712d6bc2ad665.js.map"
+      "component---src-pages-features-js-263a8831a2e80a179ce2.js",
+      "component---src-pages-features-js-263a8831a2e80a179ce2.js.map"
     ],
     "component---src-pages-benefits-js": [
-      "component---src-pages-benefits-js-bc58152b3072de8c24ee.js",
-      "component---src-pages-benefits-js-bc58152b3072de8c24ee.js.map"
+      "component---src-pages-benefits-js-037dfd62b90b6a4468d0.js",
+      "component---src-pages-benefits-js-037dfd62b90b6a4468d0.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-06c16f7a7eb8410a2ba9.js",
-      "component---src-layouts-index-js-06c16f7a7eb8410a2ba9.js.map"
+      "component---src-layouts-index-js-9dfde2a118f7f9bd795b.js",
+      "component---src-layouts-index-js-9dfde2a118f7f9bd795b.js.map"
     ],
     "path---page-2": [
       "path---page-2-a0e39f21c11f6a62c5ab.js",
@@ -49,9 +49,9 @@
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
     ],
     "commons": [
-      "commons-772b1cf8c9af657da5bb.js",
+      "commons-65814e0d8da2347d1f78.js",
       "build-js-styles.css",
-      "commons-772b1cf8c9af657da5bb.js.map",
+      "commons-65814e0d8da2347d1f78.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [

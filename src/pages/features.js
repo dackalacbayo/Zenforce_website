@@ -17,7 +17,7 @@ const otherFeatures = [
   ]
 
 const OtherFeatureItem = ({title,icon,desc}) => (
-  <div className="col-12 col-lg-3">
+  <div className="col-12 col-lg-3 mb-5">
       <div className="card features">
           <div className="card-body text-center">
           <i className={icon}></i>
@@ -33,7 +33,7 @@ const OtherFeatureItem = ({title,icon,desc}) => (
 )
 
 
-  const featureItem = [
+const featureItem = [
     {tabTitle:'Task Creation', href:'#task', title:'Task Creation Management',active:true, image: task, id:'task',
       desc1:'Involves in planning, tracking and reporting. It helps individual or groups to achieve goals.',
       desc2:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. Ut placerat dui eu nulla congue tincidunt ac a nibh. Mauris accumsan pulvinar lorem placerat volutpat. Praesent quis facilisis elit. Sed condimentum neque quis ex porttitor,',
@@ -61,7 +61,7 @@ const NavItem = ({tabTitle,href,active}) => (
 const TabItem = ({image, title, desc1, desc2, desc3, id, active}) => (
   <div className = { active ? "tab-pane fade show active" : "tab-pane fade" } id={id} >
     <div className="d-flex flex-column flex-lg-row">
-        <img src={image} alt="graphic" className="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0 mt-5"/>
+        <img src={image} alt="graphic" className="img-fluid mr-lg-5 mb-5 mb-lg-0 mt-5"/>
         <div className="mr-5">
             <h2 className="feat-title">{title}</h2>
             <p className="lead black">{desc1}</p>
@@ -89,7 +89,7 @@ class features extends Component {
           </div>
         </div>
 
-<div className="section light-bg">
+<div className="section light-bg mb-5">
     <div className="container pb-5 mb-2 pt-2">
         <div className="section-title">
             <h3 className="feat-header-title mt-5">Do more with our app</h3>
@@ -99,14 +99,14 @@ class features extends Component {
 
         </ul>
         <div className="tab-content p-4">
-          {featureItem.map((tabFeat) => <TabItem {...tabFeat} />)}
+            {featureItem.map((tabFeat) => <TabItem {...tabFeat} />)}
 
 
         </div>
     </div>
 </div>
   <hr className="features"/>
-      <div className="section light-bg pb-5 pt-4 my-3" id="features">
+      <div className="section light-bg pb-5 pt-4 my-3 mb-5" id="features">
              <div className="container">
                  <div className="section-title">
                      <h3 className="other-features pb-5">Other Features</h3>

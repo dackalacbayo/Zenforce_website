@@ -10,7 +10,7 @@ import './style.css'
 import '../assets/web-fonts-with-css/css/fontawesome-all.css'
 
 import image1  from '../assets/images/white_logo_transparent@2x.png'
-import 'bootstrap/dist/js/bootstrap.js';
+// import 'bootstrap/dist/js/bootstrap.js';
 const Layout = ({ children, data }) => (
   <div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>

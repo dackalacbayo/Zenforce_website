@@ -8,7 +8,7 @@ import Contact from '../components/Contact'
 const InputField = props => (
    <div className="form-row">
      <div className="col-md-12">
-       <div><label className="col-form-label">{props.name}</label> </div>
+       <div><label className="col-form-label">{props.name}<span className="text-danger"> *</span></label> </div>
        <Input fluid type={props.type} placeholder={props.name} name={props.fieldKey} required/>
      </div>
     </div>
@@ -116,20 +116,20 @@ const items = [
                       <FormSection items={items} />
                			</div>
                			<div className="col-md-6">
-                      <label className="col-form-label">Company Name</label>
+                      <label className="col-form-label">Company Name<span className="text-danger"> *</span></label>
                       <Input fluid placeholder="Company Name" name="companyName" width={16} required/>
 
-                      <label className="col-form-label">Industry</label><br/>
+                      <label className="col-form-label">Industry<span className="text-danger"> *</span></label><br/>
                       <select className="select_industry" name="industry" required>
                         <option value="" disabled selected hidden>Select Industry</option>
                         {optionIndustries}</select>
 
-                      <label className="col-form-label">Company Size</label><br/>
+                      <label className="col-form-label">Company Size<span className="text-danger"> *</span></label><br/>
                       <select className="select_industry" name="companySize" required>
                         <option value="" disabled selected hidden>Select Company Size</option>
                         {optionCompSize}</select>
 
-                      <label className="col-form-label">Message</label>
+                      <label className="col-form-label">Message<span className="text-danger"> *</span></label>
                       <TextArea className="form-control" name="message" id="message-text" required/><br/>
                       <div>
                       </div>

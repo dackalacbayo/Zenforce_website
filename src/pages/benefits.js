@@ -25,28 +25,33 @@ const benefitss = [
 ]
 
 const BenefitItem = ({title, desc, flip, icons, image, list1, list2, list3, list4}) => (
-  <div className="row mb-5">
-    <div className={flip ? "order-md-2 col-lg-8 col-md-12 col-sm-12 ml-auto" : "col-lg-8 col-md-12 col-sm-12 ml-auto"} >
+  <div className="row benefit-item mb-3">
+    <div className={flip ? "order-md-2 col-lg-8 col-md-8 col-sm-12 " : "col-lg-8 col-md-8 col-sm-12"} >
         <h3 className="feat-header-title mt-5">{title}</h3>
         <p className="text-secondary mr-5 mb-3">{desc}</p>
-          <ul className="text-secondary list-unstyled mb-4">
-              <li className="mb-2">
-                  <i className="fas other-features fa-check mr-2"></i>{list1}</li>
-              <li className="mb-2">
-                  <i className="fas other-features fa-check mr-2"></i>{list2}</li>
-              <li className="mb-2">
-                  <i className="fas other-features fa-check mr-2"></i>{list3}</li>
-              <li className="mb-2">
-                  <i className="fas other-features fa-check mr-2"></i>{list4}</li>
+          <ul className="text-secondary list-unstyled mb-2">
+            <div className="row mt-4">
+              <div className="col-xs-6 ml-3 mr-5">
+                <li className="mb-2">
+                    <i className="fas other-features fa-check mr-2 "></i>{list1}</li>
+                <li className="mb-2">
+                    <i className="fas other-features fa-check mr-2"></i>{list2}</li>
+                </div>
+                <div className="col-xs-6 ml-3 mr-5">
+                <li className="mb-2">
+                    <i className="fas other-features fa-check mr-2"></i>{list3}</li>
+                <li className="mb-2">
+                    <i className="fas other-features fa-check mr-2"></i>{list4}</li>
+              </div>
+            </div>
           </ul>
-    </div>
-
-    <div className={flip ? "order-md-1 col-lg-3 col-md-10 col-sm-12 mr-auto my-auto" : "col-lg-3 col-md-10 col-sm-12 mr-auto my-auto"}>
-    <div className="card w-100 border-info py-3">
-        <div className="py-5 d-flex">
-            <img className="mb-4 m-auto" src={image} height="100px"/>
         </div>
-    </div>
+
+    <div className={flip ? "order-md-1 col-lg-4 col-md-4 col-sm-12 mr-auto" : "col-lg-4 col-md-4 col-sm-12 mr-auto"}>
+        <div className="d-flex">
+            <img className="m-auto img-fluid" src={image} height="100px"/>
+        </div>
+
     </div><hr/>
   </div>
 )
@@ -69,8 +74,8 @@ class benefits extends Component {
               </div>
             </div>
           </div>
-            <div className="pt-5 pb-5 mb-2" id="content-14">
-              <div className="container pt-3">
+            <div className="pt-2" id="content-14">
+              <div className="container pt-5">
                 {benefitss.map((bene) => <BenefitItem {...bene} />)}
               </div>
             </div>

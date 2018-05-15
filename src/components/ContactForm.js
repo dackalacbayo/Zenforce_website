@@ -64,10 +64,10 @@ const industries = [
 ]
 
 const optionIndustries = industries.map((ind) => (
-  <option className="" value={ind.text}> {ind.text} </option>
+  <option className="options" value={ind.text}> {ind.text} </option>
 ))
 const optionCompSize = companySize.map((size) => (
-  <option className="" value={size.text}> {size.text} </option>
+  <option className="options" value={size.text}> {size.text} </option>
 ))
 
 
@@ -124,7 +124,7 @@ const items = [
                           <div className="single-contact-info d-flex py-1">
                               <div className="contact-icon mr-15 ">
                                 <i className="fas fa-map-marker-alt"></i>
-                              </div><p className="text-left lead black small ml-3">3201 Antel Global Corporate Center, J. Vargas Ave. ,<br/>  Ortigas Center, Pasig City</p>
+                              </div><p className="text-left lead black small ml-3">3201 Antel Global Corporate Center, J. Vargas Ave., Ortigas Center, Pasig City</p>
                           </div>
                           <div className="single-contact-info d-flex py-1">
                               <div className="contact-icon mr-15">
@@ -155,7 +155,7 @@ const items = [
                             <Input fluid placeholder="Company Name" name="companyName" width={16} required/>
 
                             <label className="col-form-label">Industry</label><br/>
-                            <select className="select_industry" name="industry" required>
+                              <select className="select_industry" name="industry" required>
                               <option value="" disabled selected hidden>Select Industry</option>
                               {optionIndustries}</select>
 

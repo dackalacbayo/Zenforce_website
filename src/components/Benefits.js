@@ -46,21 +46,19 @@ class Benefits extends Component {
            <h5 className="title">Benefits</h5>
            <div className="space-10"></div>
        </div>
-           <h2 className="display-4">Why we should use Zenforce</h2>
+            <div className="">
+             <h2 className="display-4 py-3">Why we should use Zenforce</h2>
+            </div>
             <span className="lead">Lorem ipsum dolor sit amet, omnis tractatos ad sea. Duo elitr abhorreant eu, ex vis mundi quaestio intellegebat.</span>
        </div>
        </div>
 
        <div className="row justify-content-around align-items-center pt-5">
-
            <div>
               <div id="carouselExampleIndicators" className="carousel slide" data-interval="2500" data-ride="carousel">
                  <ol className="carousel-indicators position-relative">
-
-                 {benefits.filter((benes) => {return (benes.display === true)})
-                     .map((benes) => {return <TabDesc {...benes}/>})}
-
-
+                   {benefits.filter((benes) => {return (benes.display === true)})
+                       .map((benes) => {return <TabDesc {...benes}/>})}
                  </ol>
                       <div className="carousel-inner text-center my-5" role="listbox">
                         <div className="carousel-item active text-center">
@@ -73,13 +71,7 @@ class Benefits extends Component {
                           <img className="img-fluid" src={image3} alt="Third slide"/>
                         </div>
                       </div>
-            </div>
-
-
-
-
-
-
+              </div>
            </div>
        </div>
 
@@ -90,9 +82,6 @@ class Benefits extends Component {
                   <Link to="/benefits"><button className="btn viewMore mr-2 btn-lg" >View More &rsaquo;</button></Link>
            </div>
        </div>
-
-
-
    </div>
 
     )
