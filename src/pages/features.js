@@ -2,7 +2,7 @@ import React , {Component} from 'react'
 import Link from 'gatsby-link'
 import logo from '../assets/images/white_logo_transparent@2x.png'
 import Contact from '../components/Contact'
-import ContactForm from '../components/ContactForm'
+import PageHeader from '../components/shared/PageHeader'
 import image1  from '../assets/images/if_window_screen_with_mobile_icon_2541663.png'
 import task  from '../assets/images/if_notes_87447.png'
 import expense  from '../assets/images/if_dollar_87424.png'
@@ -61,12 +61,12 @@ const NavItem = ({tabTitle,href,active}) => (
 const TabItem = ({image, title, desc1, desc2, desc3, id, active}) => (
   <div className = { active ? "tab-pane fade show active" : "tab-pane fade" } id={id} >
     <div className="d-flex flex-column flex-lg-row">
-        <img src={image} alt="graphic" className="img-fluid mr-lg-5 mb-5 mb-lg-0 mt-5"/>
-        <div className="mr-5">
+        <img className="m-auto img-fluid mr-lg-5" src={image} height="100px"/>
+        <div className="">
             <h2 className="feat-title">{title}</h2>
-            <p className="lead black">{desc1}</p>
-            <p>{desc2}</p>
-            <p>{desc3}</p>
+            <strong className="text-justify">{desc1}</strong>
+            <p className="desc2 text-justify mt-3">{desc2}</p>
+            <p className="desc3 text-justify">{desc3}</p>
         </div>
     </div>
   </div>
@@ -77,49 +77,36 @@ class features extends Component {
     return(
       <div>
         <div className="pt-5 mb-2" id="content-14">
-          <div className="features-banner" data-stellar-offset-parent="true" >
-            <div className="container" >
-              <div className="f_vcenter">
-                <div className="f_vbottom"> <h1 className="profile-title display-4 font-weight-bold mb-2 ">Features</h1></div>
-                <div className ="f_rht">
-                    <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br/>
+            <PageHeader title={"Features"} breadcrumbItem1={"Home"} breadcrumbItem2={"Features"}/>
+
+                <div className="section light-bg mb-5">
+                    <div className="container pb-5 mb-2 pt-2">
+                        <div className="section-title">
+                            <h3 className="feat-header-title mt-5">Do more with our app</h3>
+                        </div>
+                        <ul className="nav nav-tabs nav-justified" role="tablist">
+                            {featureItem.map((items) => <NavItem {...items} />)}
+
+                        </ul>
+                        <div className="tab-content p-4 py-5">
+                            {featureItem.map((tabFeat) => <TabItem {...tabFeat} />)}
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
+                <hr className="features"/>
+                <div className="section light-bg pb-5 pt-4 my-3 mb-5" id="features">
+                       <div className="container">
+                           <div className="section-title">
+                               <h3 className="other-features pb-5">Other Features</h3>
+                           </div>
+                           <div className="row">
+                             {otherFeatures.filter((feat) => {return (feat.active === true)})
+                                      .map((feat) => {return <OtherFeatureItem {...feat}/>})}
+                           </div>
+                      </div>
+                </div>
         </div>
-
-<div className="section light-bg mb-5">
-    <div className="container pb-5 mb-2 pt-2">
-        <div className="section-title">
-            <h3 className="feat-header-title mt-5">Do more with our app</h3>
-        </div>
-        <ul className="nav nav-tabs nav-justified" role="tablist">
-            {featureItem.map((items) => <NavItem {...items} />)}
-
-        </ul>
-        <div className="tab-content p-4">
-            {featureItem.map((tabFeat) => <TabItem {...tabFeat} />)}
-
-
-        </div>
-    </div>
-</div>
-  <hr className="features"/>
-      <div className="section light-bg pb-5 pt-4 my-3 mb-5" id="features">
-             <div className="container">
-                 <div className="section-title">
-                     <h3 className="other-features pb-5">Other Features</h3>
-                 </div>
-                 <div className="row">
-                   {otherFeatures.filter((feat) => {return (feat.active === true)})
-                            .map((feat) => {return <OtherFeatureItem {...feat}/>})}
-                 </div>
-            </div>
-      </div>
-
-        <Contact />
-
+          <Contact />
       </div>
     )
   }

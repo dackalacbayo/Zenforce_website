@@ -7,6 +7,7 @@ exports.layouts = {
 }
 
 exports.components = {
+  "component---cache-dev-404-page-js": preferDefault(require("C:\\Users\\AGCUSER\\zenforce-landing\\.cache\\dev-404-page.js")),
   "component---src-pages-404-js": preferDefault(require("C:\\Users\\AGCUSER\\zenforce-landing\\src\\pages\\404.js")),
   "component---src-pages-about-js": preferDefault(require("C:\\Users\\AGCUSER\\zenforce-landing\\src\\pages\\about.js")),
   "component---src-pages-benefits-js": preferDefault(require("C:\\Users\\AGCUSER\\zenforce-landing\\src\\pages\\benefits.js")),
@@ -20,6 +21,7 @@ exports.components = {
 
 exports.json = {
   "layout-index.json": require("C:\\Users\\AGCUSER\\zenforce-landing\\.cache\\json\\layout-index.json"),
+  "dev-404-page.json": require("C:\\Users\\AGCUSER\\zenforce-landing\\.cache\\json\\dev-404-page.json"),
   "404.json": require("C:\\Users\\AGCUSER\\zenforce-landing\\.cache\\json\\404.json"),
   "about.json": require("C:\\Users\\AGCUSER\\zenforce-landing\\.cache\\json\\about.json"),
   "benefits.json": require("C:\\Users\\AGCUSER\\zenforce-landing\\.cache\\json\\benefits.json"),

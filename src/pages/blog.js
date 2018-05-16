@@ -1,9 +1,9 @@
 import React , {Component} from 'react'
+import { Header, Icon, Segment,Label, Dropdown,Grid,Input, TextArea, Divider, Button, Select } from 'semantic-ui-react'
 import Link from 'gatsby-link'
 import logo from '../assets/images/white_logo_transparent@2x.png'
 import Contact from '../components/Contact'
-import ContactForm from '../components/ContactForm'
-import { Header, Icon, Segment,Label, Dropdown,Grid,Input, TextArea, Divider, Button, Select } from 'semantic-ui-react'
+import PageHeader from '../components/shared/PageHeader'
 import image1 from '../assets/images/twodevices@2x.png'
 import image2 from '../assets/images/project-desktop-just-things.jpg'
 import image3 from '../assets/images/project-mobile-zen-garden.jpg'
@@ -56,15 +56,10 @@ const mappingFunction = p => (
 )
 
 const titles = articles.map(mappingFunction);
-// console.log(titles.slice(0,2))
-
 var RecentPosts = titles.slice(0,5);
-// console.log("RecentPosts", RecentPosts)
 
 const article = articles.map(ArticleItem);
-
 var Articles = article.slice(0,5);
-// console.log("articles",Articles);
 
 
 
@@ -73,14 +68,7 @@ class blog extends Component {
     return(
       <div className="blog">
         <div className="pt-5 mb-2" id="content-14">
-          <div className="features-banner" data-stellar-offset-parent="true" >
-              <div className="container" >
-                <div className="f_vcenter">
-                  <div className="f_vbottom"><h1 className="profile-title display-4 font-weight-bold mb-2 ">ZenForce</h1></div>
-                  <div className ="f_rht">  <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br/></div>
-                </div>
-              </div>
-            </div>
+          <PageHeader title={"ZenForce"} breadcrumbItem1={"Home"} breadcrumbItem2={"Blog"} />
         </div>
 
         <div className="container blog">

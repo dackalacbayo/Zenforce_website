@@ -4,11 +4,11 @@ import 'semantic-ui-css/semantic.min.css'
 import Link from 'gatsby-link'
 import Features from '../components/Features'
 import Benefits from '../components/Benefits'
-import ContactForm from '../components/ContactForm'
 import Contact from '../components/Contact'
 
 import image  from '../assets/images/zenForce.png'
 import image1  from '../assets/images/zenforceBrochure.png'
+import logo  from '../assets/images/white_logo_transparent@2x.png'
 import 'bootstrap/dist/css/bootstrap.css';
 
 import { Header, Icon, Segment,Label, Dropdown,Grid,Input, TextArea, Divider, Button } from 'semantic-ui-react'

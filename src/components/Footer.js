@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import image1  from '../assets/images/white_logo_transparent@2x.png'
+import logo  from '../assets/images/white_logo_transparent@2x.png'
 
 const Footer = () => (
   <section className="footer pb-5">
@@ -10,7 +10,7 @@ const Footer = () => (
 
           <div className="col-6 col-md">
             <ul className="list-unstyled text-small">
-             <a href='#'><img className="sec3_img"  src={image1} alt="generic"/></a><br/>
+             <a href='#'><img className="sec3_img"  src={logo} alt="generic"/></a><br/>
              <small className="d-block mb-3 text-muted">&copy; 2017-2018</small>
             </ul>
           </div>
