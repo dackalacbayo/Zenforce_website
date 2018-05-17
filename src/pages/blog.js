@@ -71,7 +71,7 @@ class blog extends Component {
           <PageHeader title={"ZenForce"} breadcrumbItem1={"Home"} breadcrumbItem2={"Blog"} />
         </div>
 
-        <div className="container blog">
+        <div className="container pt-3">
           <div className="row pb-5">
             <div className="col-md-8">
               {Articles}

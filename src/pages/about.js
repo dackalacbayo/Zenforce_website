@@ -63,7 +63,7 @@ class about extends Component {
 
           <div className="pb-5 mb-5 mt-5">
             <section className="section pb-0 py-3">
-              <div className="container about py-2">
+              <div className="container py-2">
                 <div className="row">
                   <div className="col-md-2">
                     <div className="title-about"> About our company </div>
@@ -97,7 +97,7 @@ class about extends Component {
             </section>
 
             <section className="section pb-0 py-3">
-              <div className="container about">
+              <div className="container">
                 <div className="row">
                   <div className="col-md-2">
                     <div className="title-about mt-4">	Our team</div>
@@ -116,7 +116,7 @@ class about extends Component {
             </section>
 
             <section className="section py-3">
-              <div className="container about">
+              <div className="container">
                 <div className="row">
                   <div className="col-md-2">
                     <div className="title-about mt-4">Our clients</div>

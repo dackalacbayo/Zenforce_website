@@ -5,6 +5,7 @@ import Link from 'gatsby-link'
 import Features from '../components/Features'
 import Benefits from '../components/Benefits'
 import Contact from '../components/Contact'
+import Services from '../components/Services'
 
 import image  from '../assets/images/zenForce.png'
 import image1  from '../assets/images/zenforceBrochure.png'
@@ -28,6 +29,12 @@ const IndexPage = () => (
 
           <section id="features" className="">
               <Features />
+          </section>
+
+          <hr className="m-0" />
+
+          <section id="features" className="">
+              <Services />
           </section>
 
           <section id="contacts" className="">

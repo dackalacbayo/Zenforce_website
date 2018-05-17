@@ -16,7 +16,8 @@ exports.components = {
   "component---src-pages-fa-q-js": preferDefault(require("C:\\Users\\AGCUSER\\zenforce-landing\\src\\pages\\faQ.js")),
   "component---src-pages-features-js": preferDefault(require("C:\\Users\\AGCUSER\\zenforce-landing\\src\\pages\\features.js")),
   "component---src-pages-index-js": preferDefault(require("C:\\Users\\AGCUSER\\zenforce-landing\\src\\pages\\index.js")),
-  "component---src-pages-page-2-js": preferDefault(require("C:\\Users\\AGCUSER\\zenforce-landing\\src\\pages\\page-2.js"))
+  "component---src-pages-page-2-js": preferDefault(require("C:\\Users\\AGCUSER\\zenforce-landing\\src\\pages\\page-2.js")),
+  "component---src-pages-services-js": preferDefault(require("C:\\Users\\AGCUSER\\zenforce-landing\\src\\pages\\services.js"))
 }
 
 exports.json = {
@@ -31,5 +32,6 @@ exports.json = {
   "features.json": require("C:\\Users\\AGCUSER\\zenforce-landing\\.cache\\json\\features.json"),
   "index.json": require("C:\\Users\\AGCUSER\\zenforce-landing\\.cache\\json\\index.json"),
   "page-2.json": require("C:\\Users\\AGCUSER\\zenforce-landing\\.cache\\json\\page-2.json"),
+  "services.json": require("C:\\Users\\AGCUSER\\zenforce-landing\\.cache\\json\\services.json"),
   "404-html.json": require("C:\\Users\\AGCUSER\\zenforce-landing\\.cache\\json\\404-html.json")
 }

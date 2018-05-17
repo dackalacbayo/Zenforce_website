@@ -122,6 +122,37 @@ h1.profile-title{
   border-radius: 0.25rem;
 }
 
+.card.pricing {
+    border: 1px solid #f1eef1;
+}
+
+.card.pricing .card-head {
+    text-align: center;
+    padding: 40px 0 20px;
+}
+
+.card.pricing .card-head .price {
+    display: block;
+    font-size: 20px;
+    color: #000;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.card.pricing.popular {
+    border-top-width: 3px;
+    border-color: #00c0cc #faf6fb #FFF;
+    box-shadow: 0px 12px 59px 0px rgba(36, 7, 31, 0.11);
+    color: #633991;
+}
+
+.card.pricing .list-group-item {
+    border: 0;
+    text-align: center;
+    color: #959094;
+    padding: 1.05rem 1.25rem;
+}
+
 div.card-body.pointer:hover{
   background-color: #f0f0f0;
 }
@@ -132,6 +163,20 @@ div.icon-box.icon-primary{
   height: 80px;
   margin: 0 auto;
   border-radius: 50%;
+  box-shadow: 0px 9px 35px -6px rgba(0, 0, 0, 0.3);
+  font-size: 0.7142em;
+  /* background-color: #e8e8e8; */
+  background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+  background: linear-gradient(to right, #50c9c3, #40dcd3);
+  position: relative;
+}
+
+div.icon-box.icon-square{
+  max-width: 80px;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 10%;
   box-shadow: 0px 9px 35px -6px rgba(0, 0, 0, 0.3);
   font-size: 0.7142em;
   /* background-color: #e8e8e8; */
@@ -195,7 +240,7 @@ a.dropdown-item:hover{
 }
 
 a.nav-link{
-  color:red;
+  color:black;
 }
 div.row.footer{
     margin-top: 30px;
@@ -483,12 +528,12 @@ i.aa.fas{
   margin-right: 5px;
 }
 
-i.feat.fas{
+i.feat{
   color:#fff;
   margin-top: 7px;
 }
 
-i.bene.fas{
+i.bene {
   color:#40a09c;
   margin-right: 15px !important;
 }
@@ -617,12 +662,28 @@ div.modal-footer{
   background-color: #ededee;
 }
 
+.round-icon-box:hover .icon-box-wrapper .icon-box:after,
 .square-icon-box:hover .icon-box-wrapper .icon-box:after {
     transform: scale(1);
 }
 
+.round-icon-box.primary .icon-box:after,
 .square-icon-box.primary .icon-box:after {
     border: 2px solid #50c9c3;
+}
+.round-icon-box .icon-box-wrapper .icon-box:after {
+    width: 98px;
+    height:98px;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: -9px;
+    left: -9px;
+    opacity: 0.8;
+    border-radius: 100px;
+    transform: scale(0.8);
+    transition: all 0.3s;
 }
 .square-icon-box .icon-box-wrapper .icon-box:after {
     width: 98px;
@@ -634,7 +695,7 @@ div.modal-footer{
     top: -9px;
     left: -9px;
     opacity: 0.8;
-    border-radius: 100px;
+    border-radius: 10px;
     transform: scale(0.8);
     transition: all 0.3s;
 }
@@ -829,7 +890,7 @@ h2.feat-title {
 }
 
 
-.nav-tabs .nav-link{
+.nav-tabs .nav-link {
     background: #e7eef5;
     border-top-width: 3px;
     color: #185a9d;
@@ -837,6 +898,11 @@ h2.feat-title {
     width: 100%;
     height: 100%;
 }
+
+.nav-pills .nav-link{
+  cursor: pointer;
+}
+
 .nav-tabs .nav-link.active {
     background: #FFF;
     border-top-width: 3px;
@@ -844,6 +910,24 @@ h2.feat-title {
     color: #185a9d;
 }
 
+.custom-tabs .nav-pills .nav-link.active {
+    background: none;
+    color: #007bff;
+    padding-left: 20px;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.custom-tabs .nav-pills .nav-link.active:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    width: 2px;
+    background: #5AC8D8;
+}
 /*feature-page*/
 
 /*faq*/

@@ -22,6 +22,7 @@ const Header = () => (
                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <Link className="dropdown-item pr-3" to="../benefits">Benefits</Link>
                   <Link className="dropdown-item pr-3" to="../features">Features</Link>
+                  <Link className="dropdown-item pr-3" to="../services">Services</Link>
                </div>
              </li>
            <li className="nav-item header">

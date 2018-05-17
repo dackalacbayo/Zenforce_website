@@ -70,6 +70,13 @@
         "path": "/page-2/"
     },
     {
+        "componentChunkName": "component---src-pages-services-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "services.json",
+        "path": "/services/"
+    },
+    {
         "componentChunkName": "component---src-pages-404-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
