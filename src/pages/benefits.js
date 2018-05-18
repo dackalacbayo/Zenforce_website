@@ -52,7 +52,6 @@ const BenefitItem = ({title, desc, flip, icons, image, list1, list2, list3, list
         <div className="d-flex">
             <img className="m-auto img-fluid" src={image} height="100px"/>
         </div>
-
     </div><hr/>
   </div>
 )

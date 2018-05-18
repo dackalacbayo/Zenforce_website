@@ -16,23 +16,6 @@ const otherFeatures = [
     {title: 'Detailed Reporting', active:true, icon:'other-features display-4 fas fa-clipboard-list',desc:'Gives you automatic, accurate and structural digital reports'},
   ]
 
-const OtherFeatureItem = ({title,icon,desc}) => (
-  <div className="col-12 col-lg-3 mb-5">
-      <div className="card features">
-          <div className="card-body text-center">
-          <i className={icon}></i>
-              <div className="media">
-                  <div className="media-body">
-                      <h4 className="card-title mt-4">{title}</h4>
-                      <p className="card-text">{desc}</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-)
-
-
 const featureItem = [
     {tabTitle:'Task Creation', href:'#task', title:'Task Creation Management',active:true, image: task, id:'task',
       desc1:'Involves in planning, tracking and reporting. It helps individual or groups to achieve goals.',
@@ -51,6 +34,23 @@ const featureItem = [
       desc2:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. Ut placerat dui eu nulla congue tincidunt ac a nibh. Mauris accumsan pulvinar lorem placerat volutpat. Praesent quis facilisis elit. Sed condimentum neque quis ex porttitor,',
       desc3:'malesuada faucibus augue aliquet. Sed elit est, eleifend sed dapibus a, semper a eros. Vestibulum blandit vulputate pharetra. Phasellus lobortis leo a nisl euismod, eu faucibus justo sollicitudin. Mauris consectetur, tortor sed tempor malesuada, sem nunc porta augue, in dictum arcu tortor id turpis. Proin aliquet vulputate aliquam.',},
   ]
+
+const OtherFeatureItem = ({title,icon,desc}) => (
+  <div className="col-12 col-lg-3 mb-5">
+      <div className="card features">
+          <div className="card-body text-center">
+          <i className={icon}></i>
+              <div className="media">
+                  <div className="media-body">
+                      <h4 className="card-title mt-4">{title}</h4>
+                      <p className="card-text">{desc}</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+)
+
 
 const NavItem = ({tabTitle,href,active}) => (
   <li className="nav-item">
@@ -94,7 +94,7 @@ class features extends Component {
                     </div>
                 </div>
                 <hr className="features"/>
-                <div className="section light-bg pb-5 pt-4 my-3 mb-5" id="features">
+                  <div className="section light-bg pb-5 pt-4 my-3 mb-5" id="features">
                        <div className="container">
                            <div className="section-title">
                                <h3 className="other-features pb-5">Other Features</h3>
@@ -103,11 +103,11 @@ class features extends Component {
                              {otherFeatures.filter((feat) => {return (feat.active === true)})
                                       .map((feat) => {return <OtherFeatureItem {...feat}/>})}
                            </div>
+                        </div>
                       </div>
-                </div>
-        </div>
-          <Contact />
-      </div>
+                    </div>
+              <Contact />
+            </div>
     )
   }
 }

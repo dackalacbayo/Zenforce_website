@@ -5,9 +5,7 @@ const Footer = () => (
   <section className="footer pb-5">
       <footer className="container py-2">
         <div className="row footer">
-
         <a className="scroll-top" href="#"><i className="fas fa-angle-up mr-0"></i></a>
-
           <div className="col-6 col-md">
             <ul className="list-unstyled text-small">
              <a href='#'><img className="sec3_img"  src={logo} alt="generic"/></a><br/>
@@ -19,7 +17,6 @@ const Footer = () => (
             <i className="fas fa-at"></i><a href="http://iainnovations.com/"><small className="text-muted site"> www.iainnovations.com</small></a> <br/ >
             <i className="fas fa-phone"></i><small className="text-muted"> 709-5125 </small><br/ >
             <i className="fas fa-envelope"></i><small className="text-muted">info@innovations.ph</small> <br/ ><hr/>
-
 
             <ul className="list-unstyled text-small icons">
               <li className="socialIcons"><a href="#" className="fab fa-twitter"><span className="label"> </span></a></li>
@@ -69,9 +66,7 @@ const Footer = () => (
             </ul>
           </div>
         </div>
-
         </footer>
-
       </section>
 
 

@@ -10,7 +10,6 @@ import image4 from '../assets/images/if_39-Globe_34330.png'
 import image5 from '../assets/images/if_view_126581.png'
 import image6 from '../assets/images/if_kservices_18068.png'
 
-
 const ourTeam = [
   {name:'Richard Roe', position:'Creative Director',image:image1,facebook:'https://www.facebook.com/',twitter:'https://www.twiiter.com/',instagram:'https://www.instagram.com/'},
   {name:'Ann Doe', position:'Designer', image:image1,facebook:'https://www.facebook.com/',twitter:'https://www.twiiter.com/',instagram:'https://www.instagram.com/'},
@@ -52,7 +51,6 @@ const OurClients = ({icon, href}) => (
     </a>
   </div>
 )
-
 
 class about extends Component {
   render(){

@@ -98,5 +98,4 @@ class faQ extends Component {
   }
 }
 
-
 export default faQ

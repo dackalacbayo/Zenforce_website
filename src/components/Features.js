@@ -25,15 +25,15 @@ const features = [
 
 const FeatureItem = ({title,icon,desc}) => (
   <div className="col-lg-3 m-0 mb-5 pb-5">
-  <div className="round-icon-box is-landing primary">
-      <div className="icon-box-wrapper">
-          <div className="icon-box icon-primary icon-circle mb-4">
-                <h2 className="featurette-heading py-3 pl-2 pt-4"><i className={`feat ${icon}`}></i></h2>
-          </div>
-      </div>
-  </div>
-    <h5 className="feature_title">{title}</h5>
-    <p className="feature_desc">{desc}</p>
+    <div className="round-icon-box is-landing primary">
+        <div className="icon-box-wrapper">
+            <div className="icon-box icon-primary icon-circle mb-4">
+                  <h2 className="featurette-heading py-3 pl-2 pt-4"><i className={`feat ${icon}`}></i></h2>
+            </div>
+        </div>
+    </div>
+        <h5 className="feature_title">{title}</h5>
+        <p className="feature_desc">{desc}</p>
   </div>
 )
 

@@ -52,10 +52,13 @@ div.tabdesc.pointer{
   background-color: transparent;
 }
 
+img.max-width{
+  max-width: 90%;
+  height: auto;
+}
 path {
   fill: #6c757d1c;
 }
-
 
 ol.breadcrumb {
     display: -ms-flexbox;
@@ -578,6 +581,7 @@ hr {
   border-top: 2px solid rgba(0, 0, 0, 0.1);
 }
 
+
 hr.banner {
   border: 0;
   border-top: 2px solid rgba(255, 253, 253, 0.31);
@@ -601,6 +605,7 @@ hr.features {
 
 
 select.select_industry{
+    -webkit-appearance: none;
     width: 100% !important;
     margin: 0;
     max-width: 100% !important;
@@ -897,6 +902,7 @@ h2.feat-title {
     background-color: #e7eef5;
     width: 100%;
     height: 100%;
+    border-color: #e7eef5 #ffffff #FFF;
 }
 
 .nav-pills .nav-link{
@@ -1049,14 +1055,21 @@ img.features {
 
 
 /* Media */
-@media (min-width:100px)  {
- }
 
  @media (min-width:320px)  {
-   .img-fluid {
+  .img-fluid {
     max-width: 100%;
     height: auto;
   }
+
+  img.img-fluid.logo{
+    margin-left: 0rem !important;
+  }
+
+  img.max-width{
+    text-align: center;
+  }
+
    div.col-lg-3{
      width: 50%;
      margin-top: -20px;
@@ -1067,6 +1080,15 @@ img.features {
      font-weight: 300;
      line-height: 1.15em;
      text-shadow: -5px 4px 9px rgba(0,0,0,0.4);
+   }
+   h2.display-4{
+     font-size: 2.5rem;
+     font-weight: 300;
+     text-transform: capitalize;
+     line-height: 1.2;
+   }
+   span.lead{
+     font-size: 15px;
    }
   img.intro-image {
       right: auto;
@@ -1086,10 +1108,6 @@ img.features {
    .carousel-indicators {
        display: block;
    }
-}
-
-option.options{
-
 }
 
 .example-preview {
@@ -1192,7 +1210,7 @@ option.placeholder{
     margin-bottom: 50px;
   }
   div.row.benefit-item{
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
   }
   div.bg-banner{
     height: 450px;
@@ -1243,7 +1261,18 @@ option.placeholder{
    max-width: 70%;
    height: auto;
  }
-
+ span.lead{
+   font-size: 1.25rem;
+   font-weight: 300;
+ }
+ h2.display-4{
+   font-size: 3.5rem;
+   font-weight: 300;
+   line-height: 1.2;
+ }
+ img.img-fluid.logo{
+   margin-left: 3rem !important;
+ }
  div.row.benefit-item{
    padding-bottom: 5rem;
  }

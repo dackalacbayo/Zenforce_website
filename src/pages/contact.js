@@ -6,8 +6,6 @@ import Contact from '../components/Contact'
 import PageHeader from '../components/shared/PageHeader'
 import ContactForm from '../components/shared/ContactForm'
 
-
-
 class contact extends Component {
   render(){
     return(
@@ -27,7 +25,6 @@ class contact extends Component {
                    		  <ContactForm />
                    		 </div>
                  </section>
-
                  <section id="contact-us">
                      <div className="wrap">
                            <button className="btn viewMore mr-3 pl-5 pr-5 btn-lg" ><Icon name='send' />Send</button>
