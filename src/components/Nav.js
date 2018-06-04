@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import logo from '../assets/images/white_logo_transparent@2x.png'
 
 
-const Header = () => (
+const Nav = () => (
   <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
      <div className="container">
        <Link className="navbar-brand js-scroll-trigger" to="../">ZenForce</Link>
@@ -43,4 +43,4 @@ const Header = () => (
 
 )
 
-export default Header
+export default Nav

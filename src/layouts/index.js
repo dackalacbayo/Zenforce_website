@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Header from '../components/Header'
+import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 // import './index.css'
 import 'bootstrap/dist/css/bootstrap.css';
@@ -26,7 +26,7 @@ const Layout = ({ children, data }) => (
     />
 
     <div>
-      <Header />
+      <Nav/>
       {children()}
       <Footer />
     </div>
