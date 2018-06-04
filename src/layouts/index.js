@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Header from '../components/Header'
 import Footer from '../components/Footer'
 // import './index.css'
 import 'bootstrap/dist/css/bootstrap.css';
@@ -10,7 +9,7 @@ import './style.css'
 import '../assets/web-fonts-with-css/css/fontawesome-all.css'
 
 import image1  from '../assets/images/white_logo_transparent@2x.png'
-import 'bootstrap/dist/js/bootstrap.js'; 
+import 'bootstrap/dist/js/bootstrap.js';
 const Layout = ({ children, data }) => (
   <div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
@@ -26,7 +25,6 @@ const Layout = ({ children, data }) => (
     />
 
     <div>
-      <Header />
       {children()}
       <Footer />
     </div>

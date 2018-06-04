@@ -19,6 +19,7 @@ class ContactFormModal extends Component {
   onChange = (e,{value,name}) => this.setState({[name]:value})
   sendContact = () => {console.log(this.state)}
 
+
 render() {
   return (
     <div className="pt-4">
@@ -53,19 +54,20 @@ render() {
                       <div className="contact-icon mr-15">
                           <i className="fas fa-phone-volume"></i>
                       </div>
-                      <p className="lead black small ml-3">709-5125 </p>
+                      <p className="text-left lead black small ml-3">709-5125 </p>
                   </div>
                   <div className="single-contact-info d-flex">
                       <div className="contact-icon mr-15">
                           <i className="fas fa-at"></i>
                       </div>
-                      <a href="http://iainnovations.com/"><p className=" lead black small ml-3"> www.iainnovations.com</p></a>
+                      <a href="http://iainnovations.com/">
+                      <p className="text-left lead black small ml-3"> www.iainnovations.com</p></a>
                   </div>
                   <div className="single-contact-info d-flex">
                       <div className="contact-icon mr-15">
                             <i className="fas fa-envelope"></i>
                       </div>
-                      <p className="lead black small ml-3"><a className="__cf_email__">info@innovations.ph</a></p>
+                      <p className="text-left lead black small ml-3"><a className="__cf_email__">info@innovations.ph</a></p>
                   </div>
                 </div>
             </div>
