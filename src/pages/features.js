@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import logo from '../assets/images/white_logo_transparent@2x.png'
 import Contact from '../components/Contact'
 import PageHeader from '../components/shared/PageHeader'
+import Header from '../components/Header'
 import image1  from '../assets/images/if_window_screen_with_mobile_icon_2541663.png'
 import task  from '../assets/images/if_notes_87447.png'
 import expense  from '../assets/images/if_dollar_87424.png'
@@ -77,6 +78,7 @@ class features extends Component {
     return(
       <div>
         <div className="pt-5 mb-2" id="content-14">
+          <Header />
             <PageHeader title={"Features"} breadcrumbItem1={"Home"} breadcrumbItem2={"Features"}/>
 
                 <div className="section light-bg mb-5">

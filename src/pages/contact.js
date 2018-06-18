@@ -1,15 +1,17 @@
 import React , {Component} from 'react'
 import Link from 'gatsby-link'
-import { Header, Icon, Segment,Label, Dropdown,Grid,Input, TextArea, Divider, Button, Select } from 'semantic-ui-react'
+import {Icon, Segment,Label, Dropdown,Grid,Input, TextArea, Divider, Button, Select } from 'semantic-ui-react'
 import logo from '../assets/images/white_logo_transparent@2x.png'
 import Contact from '../components/Contact'
 import PageHeader from '../components/shared/PageHeader'
+import Header from '../components/Header'
 import ContactForm from '../components/shared/ContactForm'
 
 class contact extends Component {
   render(){
     return(
       <div className="pt-5 pb-5 mb-5" id="content-14">
+        <Header />
         <PageHeader title={"Contact"} breadcrumbItem1={"Home"} breadcrumbItem2={"Contact"} />
 
         <div className="container pt-5">

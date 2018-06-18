@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import logo  from '../assets/images/white_logo_transparent@2x.png'
+import logo from '../../assets/images/white_logo_transparent@2x.png'
 
 const Footer = () => (
   <section className="footer pb-5">

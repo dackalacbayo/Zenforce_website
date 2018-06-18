@@ -1,9 +1,10 @@
 import React , {Component} from 'react'
-import { Header, Icon, Segment,Label, Dropdown,Grid,Input, TextArea, Divider, Button, Select } from 'semantic-ui-react'
+import {Icon, Segment,Label, Dropdown,Grid,Input, TextArea, Divider, Button, Select } from 'semantic-ui-react'
 import Link from 'gatsby-link'
 import logo from '../assets/images/white_logo_transparent@2x.png'
 import Contact from '../components/Contact'
 import PageHeader from '../components/shared/PageHeader'
+import Header from '../components/Header'
 import image1 from '../assets/images/twodevices@2x.png'
 import image2 from '../assets/images/project-desktop-just-things.jpg'
 import image3 from '../assets/images/project-mobile-zen-garden.jpg'
@@ -68,6 +69,7 @@ class blog extends Component {
     return(
       <div className="blog">
         <div className="pt-5 mb-2" id="content-14">
+        <Header />
           <PageHeader title={"ZenForce"} breadcrumbItem1={"Home"} breadcrumbItem2={"Blog"} />
         </div>
 

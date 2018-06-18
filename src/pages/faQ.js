@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import logo from '../assets/images/white_logo_transparent@2x.png'
 import Contact from '../components/Contact'
 import PageHeader from '../components/shared/PageHeader'
+import Header from '../components/Header'
 
 const faqsProduct = [
   {question:'How do I edit a page?', answer:'1Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.',id:'collapse-1',href:'#collapse-1', display:true},
@@ -72,6 +73,7 @@ class faQ extends Component {
   render(){
     return(
       <div className="pt-5 pb-1 mb-2" id="content-14">
+        <Header />
         <PageHeader title={"Questions"} breadcrumbItem1={"Home"} breadcrumbItem2={"FaQ"} />
 
         <div className="container pt-5 pb-5">

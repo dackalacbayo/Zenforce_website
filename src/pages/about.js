@@ -9,6 +9,7 @@ import image3 from '../assets/images/if_Group_Meeting_Light_80844.png'
 import image4 from '../assets/images/if_39-Globe_34330.png'
 import image5 from '../assets/images/if_view_126581.png'
 import image6 from '../assets/images/if_kservices_18068.png'
+import Header from '../components/Header'
 
 const ourTeam = [
   {name:'Richard Roe', position:'Creative Director',image:image1,facebook:'https://www.facebook.com/',twitter:'https://www.twiiter.com/',instagram:'https://www.instagram.com/'},
@@ -57,6 +58,7 @@ class about extends Component {
     return(
       <div>
         <div className="pt-5 mb-2" id="content-14">
+          <Header />
           <PageHeader title={"About Us"} breadcrumbItem1={"Home"} breadcrumbItem2={"About"}/>
 
           <div className="pb-5 mb-5 mt-5">

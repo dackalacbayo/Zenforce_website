@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import logo from '../assets/images/white_logo_transparent@2x.png'
 import Contact from '../components/Contact'
 import PageHeader from '../components/shared/PageHeader'
+import Header from '../components/Header'
 import image1 from '../assets/images/3.png'
 import image2 from '../assets/images/mobile2.png'
 import image3 from '../assets/images/if_Group_Meeting_Light_80844.png'
@@ -87,6 +88,7 @@ class services extends Component {
     return(
       <div>
         <div className="pt-5 mb-2" id="content-14">
+          <Header />
           <PageHeader title={"Our Services"} breadcrumbItem1={"Home"} breadcrumbItem2={"Services"}/>
 
           <div className="pb-5 mb-5 mt-5">

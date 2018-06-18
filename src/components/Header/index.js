@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import logo from '../assets/images/white_logo_transparent@2x.png'
+import logo from '../../assets/images/white_logo_transparent@2x.png'
 
 
 const Nav = () => (

@@ -1,5 +1,5 @@
 var plugins = [{
-      plugin: require('C:/Users/AGCUSER/zenforce-landing/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
+      plugin: require('C:/Users/AGCUSER/Zenforce_website/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
